@@ -88,12 +88,14 @@
 }
 
 html {
+    color: var(--color-primary-gray);
     font-size: 16px;
     font-family: 'avenir-next';
 }
 
 @media (min-width: 768px) {
   html {
+    color: var(--color-primary-gray);
     font-size: 18px;
     font-family: 'avenir-next';
   }
@@ -110,6 +112,23 @@ html {
 
 body {
     margin-bottom: 60px;
+}
+
+header ul li a hover{
+    color: var(--color-primary-green);
+}
+
+footer {
+    background:var(--color-primary-brand-green);
+}
+
+footer a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--color-white);
 }
 
 @font-face {
