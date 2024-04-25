@@ -1,10 +1,101 @@
+:root {
+    --color-primary-brand-green: var(--color-green-01);
+    --color-primary-magenta: var(--color-magenta-01);
+    --color-primary-gray: var(--color-gray-01);
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray-01: #eff4f6;
+    --color-gray-02: #e4eef1;
+    --color-gray-03: #dbe7ea;
+    --color-gray-04: #cad6da;
+    --color-gray-05: #b6c4c8;
+    --color-gray-06: #9dafb6;
+    --color-gray-07: #8d9da4;
+    --color-gray-08: #7c8b90;
+    --color-gray-09: #65757b;
+    --color-gray-10: #536165;
+    --color-gray-11: #404b4f;
+    --color-dark-green-01: #004c31;
+    --color-dark-green-02: #07341b;
+    --color-dark-green-03: #001905;
+    --color-green-blue-01: #09957b;
+    --color-green-blue-02: #00846d;
+    --color-green-blue-03: #00755f;
+    --color-green-01: #00811f;
+    --color-green-02: #006e32;
+    --color-green-03: #00602e;
+    --color-green-light-01: #57b051;
+    --color-green-light-02: #11a03e;
+    --color-lime-green-01: #7dc90f;
+    --color-lime-green-02: #73b129;
+    --color-lime-green-03: #62a72b;
+    --color-soft-green-01: #e1efe2;
+    --color-soft-green-02: #d1e6ce;
+    --color-soft-green-03: #99cca0;
+    --color-dark-brown-01: #6b4236;
+    --color-dark-brown-02: #5e362c;
+    --color-dark-brown-03: #552d25;
+    --color-brown-01: #ab8061;
+    --color-brown-02: #997056;
+    --color-brown-03: #8b644c;
+    --color-yellow-01: #fdec3d;
+    --color-yellow-02: #edde26;
+    --color-yellow-03: #e1d600;
+    --color-dark-yellow-01: #edb500;
+    --color-dark-yellow-02: #e0a200;
+    --color-dark-yellow-03: #d99600;
+    --color-bright-orange-01: #ef7d00;
+    --color-bright-orange-02: #e56e02;
+    --color-bright-orange-03: #db5f06;
+    --color-orange-01: #e3614d;
+    --color-orange-02: #d85644;
+    --color-orange-03: #ce4c3b;
+    --color-pink-01: #e6007e;
+    --color-pink-02: #ce0075;
+    --color-pink-03: #b21271;
+    --color-magenta-01: #c93675;
+    --color-magenta-02: #a12b5e;
+    --color-magenta-03: #792046;
+    --color-purple-01: #701747;
+    --color-purple-02: #510e33;
+    --color-purple-03: #420c2f;
+    --color-dark-blue-01: #00548f;
+    --color-dark-blue-02: #084279;
+    --color-dark-blue-03: #083968;
+    --color-blue-01: #1791d4;
+    --color-blue-02: #0084c4;
+    --color-blue-03: #0079b8;
+    --color-light-blue-01: #a8e8f5;
+    --color-light-blue-02: #92cfe1;
+    --color-light-blue-03: #76c1d3;
+    --color-text-01: var(--color-gray-11);
+    --default-badge-color: var(--text-color);
+    --default-text-color: var(--text-color);
+    --default-border-color: #c5e3f4;
+    --default-background-color: #e8f4fb;
+    --crisis-badge-color: var(--text-color);
+    --crisis-text-color: var(--text-color);
+    --crisis-border-color: #f8d7d2;
+    --crisis-background-color: #fcefed;
+    --warning-badge-color: var(--text-color);
+    --warning-text-color: var(--text-color);
+    --warning-border-color: #fbecbf;
+    --warning-background-color: #fdf7e5;
+    --attention-badge-color: var(--text-color);
+    --attention-text-color: var(--text-color);
+    --attention-border-color: var(--warning-border-color);
+    --attention-background-color: var(--warning-background-color)
+}
+
 html {
-  font-size: 14px;
+    font-size: 16px;
+    font-family: 'avenir-next';
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'avenir-next';
   }
 }
 
@@ -18,5 +109,13 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+@font-face {
+    font-family: 'avenir-next';
+    src: url('/fonts/AvenirNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
