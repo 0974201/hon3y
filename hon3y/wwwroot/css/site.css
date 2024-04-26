@@ -114,7 +114,7 @@ body {
     margin-bottom: 60px;
 }
 
-header ul li a hover{
+header a hover{
     color: var(--color-primary-green);
 }
 
