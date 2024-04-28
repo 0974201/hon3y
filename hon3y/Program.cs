@@ -6,7 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel((context, serverOptions) =>
 {
-    serverOptions.ListenAnyIP(8080, listenOptions =>
+    var section = context.Configuration.GetSection("Kestrel");
+
+    serverOptions.ListenLocalhost(8000, listenOptions =>
     {
         listenOptions.UseConnectionLogging();
     });
