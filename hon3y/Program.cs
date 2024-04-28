@@ -1,6 +1,18 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//log connections
+
+builder.WebHost.ConfigureKestrel((context, serverOptions) =>
+{
+    serverOptions.ListenAnyIP(8080, listenOptions =>
+    {
+        listenOptions.UseConnectionLogging();
+    });
+});
+
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
