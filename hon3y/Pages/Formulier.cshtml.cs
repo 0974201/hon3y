@@ -8,5 +8,10 @@ namespace hon3y.Pages
         public void OnGet()
         {
         }
+
+        public IActionResult OnPost()
+        {
+            return null;
+        }
     }
 }
