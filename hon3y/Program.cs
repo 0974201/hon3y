@@ -16,6 +16,7 @@ builder.WebHost.ConfigureKestrel((context, serverOptions) =>
 
 
 builder.Services.AddRazorPages();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
