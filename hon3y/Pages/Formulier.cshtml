@@ -5,17 +5,19 @@
 }
 
 <div>
-    <form>
+    <form method="post">
         <label>test</label>
-        <input type="text" placeholder="test" /><br />
+        <input asp-for="voornaam" type="text" placeholder="voornaam" /><br />
         <label>test</label>
-        <input type="text" placeholder="test" /><br />
+        <input asp-for="achternaam" type="text" placeholder="achternaam" /><br />
         <label>test</label>
-        <input type="email" placeholder="test" /><br />
+        <input asp-for="email" type="email" placeholder="email" /><br />
         <label>test</label>
-        <input type="number" placeholder="0000" /><br />
+        <input asp-for="telefoonnummer" type="number" placeholder="telefoonnummer" /><br />
         <label>test</label>
-        <input type="datetime-local" /><br />
+        <input asp-for="afspraakreden" type="text" placeholder="reden afspraak" /><br />
+        <label>test</label>
+        <input asp-for="datum" type="datetime-local" /><br />
         <button>Verzend</button>
     </form>
 </div>

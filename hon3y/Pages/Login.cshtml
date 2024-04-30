@@ -5,11 +5,11 @@
 }
 
 <div>
-    <form>
+    <form method="post">
         <label for="email">email adres</label>
-        <input type="email" placeholder="email" id="email"/><br />
+        <input asp-for="email" type="email" placeholder="email" id="email"/><br />
         <label for="wachtwoord">wachtwoord</label>
-        <input type="password" placeholder="wachtwoord" id="wachtwoord"/><br />
+        <input asp-for="password" type="password" placeholder="wachtwoord" id="wachtwoord"/><br />
         <button>Login</button>
     </form>
 </div>
