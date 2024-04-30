@@ -16,7 +16,7 @@ namespace hon3y.Pages
 
         public void OnGet()
         {
-            Ip = GetClientIp;
+            //Ip = GetClientIp;
             Console.WriteLine(Ip);
         }
     }
