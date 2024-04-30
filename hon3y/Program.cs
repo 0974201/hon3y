@@ -14,9 +14,12 @@ builder.WebHost.ConfigureKestrel((context, serverOptions) =>
     });
 });
 
-
 builder.Services.AddRazorPages();
 builder.Services.AddHttpContextAccessor();
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+    options.ForwardedForHeaderName = "X-Coming-From";
+});
 
 var app = builder.Build();
 
@@ -32,7 +35,8 @@ if (!app.Environment.IsDevelopment())
 
 //app.Logger();
 
-app.UseHttpsRedirection();
+app.UseForwardedHeaders();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();

@@ -1,4 +1,7 @@
-﻿namespace hon3y.Services
+﻿using System.Net;
+using Microsoft.AspNetCore;
+
+namespace hon3y.Services
 {
     public class GetClientIp
     {
