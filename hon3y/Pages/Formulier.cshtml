@@ -6,18 +6,18 @@
 
 <div>
     <form method="post">
-        <label>test</label>
-        <input asp-for="voornaam" type="text" placeholder="voornaam" /><br />
-        <label>test</label>
-        <input asp-for="achternaam" type="text" placeholder="achternaam" /><br />
-        <label>test</label>
-        <input asp-for="email" type="email" placeholder="email" /><br />
-        <label>test</label>
-        <input asp-for="telefoonnummer" type="number" placeholder="telefoonnummer" /><br />
-        <label>test</label>
-        <input asp-for="afspraakreden" type="text" placeholder="reden afspraak" /><br />
-        <label>test</label>
-        <input asp-for="datum" type="datetime-local" /><br />
+        <label for ="voornaam">test</label>
+        <input for="voornaam" type="text" placeholder="voornaam" /><br />
+        <label for="achternaam">test</label>
+        <input for="achternaam" type="text" placeholder="achternaam" /><br />
+        <label for="email">test</label>
+        <input for="email" type="email" placeholder="email" /><br />
+        <label for="telefoonnummer">test</label>
+        <input for="telefoonnummer" type="number" placeholder="telefoonnummer" /><br />
+        <label for="afspraakreden">test</label>
+        <input for="afspraakreden" type="text" placeholder="reden afspraak" /><br />
+        <label for="datum">test</label>
+        <input for="datum" type="datetime-local" value="@DateTime.Now.ToString("dd-MM-yyyy HH:mm")" /><br />
         <button>Verzend</button>
     </form>
 </div>
