@@ -7,23 +7,23 @@ namespace hon3y.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public string Ip;
+        //public string Ip;
 
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }
 
-        private string GetIp()
+        /*private string GetIp()
         {
             Ip = HttpContext.Connection.RemoteIpAddress.ToString();
 
             return Ip;
-        }
+        }*/
 
         public void OnGet()
         {
-            Console.WriteLine(GetIp());
+            //Console.WriteLine(GetIp());
         }
     }
 }
