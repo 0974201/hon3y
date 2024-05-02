@@ -1,7 +1,6 @@
 using System.Web;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using hon3y.Services;
 
 namespace hon3y.Pages
 {
