@@ -358,3 +358,718 @@
 2024-05-02 15:38:54.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
 2024-05-02 15:38:54.578 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 2.0114ms
 2024-05-02 15:38:54.583 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.1239ms
+2024-05-02 15:55:21.951 +02:00 [INF] Testing
+2024-05-02 15:55:22.930 +02:00 [INF] User profile is available. Using 'C:\Users\detec\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-02 15:55:23.163 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-02 15:55:23.163 +02:00 [INF] Hosting environment: Development
+2024-05-02 15:55:23.163 +02:00 [INF] Content root path: C:\Users\detec\source\repos\hon3y\hon3y
+2024-05-02 15:55:23.235 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:23.366 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:23.428 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:23.436 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:23.444 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:23.446 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:23.446 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:23.541 +02:00 [INF] Executed page /Index in 108.9199ms
+2024-05-02 15:55:23.545 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:23.546 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:23.554 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 323.7548ms
+2024-05-02 15:55:23.581 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:23.581 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:23.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 2.7215ms
+2024-05-02 15:55:23.656 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.2746ms
+2024-05-02 15:55:32.722 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Privacy - null null
+2024-05-02 15:55:32.730 +02:00 [INF] Executing endpoint '/Privacy'
+2024-05-02 15:55:32.733 +02:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2024-05-02 15:55:32.734 +02:00 [INF] Executing handler method hon3y.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:32.735 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:32.735 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:32.735 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:32.740 +02:00 [INF] Executed page /Privacy in 6.5899ms
+2024-05-02 15:55:32.740 +02:00 [INF] Executed endpoint '/Privacy'
+2024-05-02 15:55:32.740 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:32.741 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Privacy - 200 null text/html; charset=utf-8 18.2435ms
+2024-05-02 15:55:32.772 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:32.772 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:32.775 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.6809ms
+2024-05-02 15:55:32.790 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0544ms
+2024-05-02 15:55:33.587 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Formulier - null null
+2024-05-02 15:55:33.590 +02:00 [INF] Executing endpoint '/Formulier'
+2024-05-02 15:55:33.593 +02:00 [INF] Route matched with {page = "/Formulier"}. Executing page /Formulier
+2024-05-02 15:55:33.593 +02:00 [INF] Executing handler method hon3y.Pages.FormModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:33.594 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:33.594 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:33.594 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:33.621 +02:00 [INF] Executed page /Formulier in 27.9457ms
+2024-05-02 15:55:33.621 +02:00 [INF] Executed endpoint '/Formulier'
+2024-05-02 15:55:33.621 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:33.621 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Formulier - 200 null text/html; charset=utf-8 34.753ms
+2024-05-02 15:55:33.651 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:33.651 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:33.652 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.515ms
+2024-05-02 15:55:33.667 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.3497ms
+2024-05-02 15:55:34.461 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Formulier2 - null null
+2024-05-02 15:55:34.463 +02:00 [INF] Executing endpoint '/Formulier2'
+2024-05-02 15:55:34.465 +02:00 [INF] Route matched with {page = "/Formulier2"}. Executing page /Formulier2
+2024-05-02 15:55:34.466 +02:00 [INF] Executing handler method hon3y.Pages.Formulier2Model.OnGet - ModelState is "Valid"
+2024-05-02 15:55:34.466 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:34.466 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:34.466 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:34.470 +02:00 [INF] Executed page /Formulier2 in 4.6168ms
+2024-05-02 15:55:34.470 +02:00 [INF] Executed endpoint '/Formulier2'
+2024-05-02 15:55:34.470 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:34.471 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Formulier2 - 200 null text/html; charset=utf-8 9.9584ms
+2024-05-02 15:55:34.496 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:34.496 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:34.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.4239ms
+2024-05-02 15:55:34.508 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.3417ms
+2024-05-02 15:55:35.320 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Privacy - null null
+2024-05-02 15:55:35.322 +02:00 [INF] Executing endpoint '/Privacy'
+2024-05-02 15:55:35.323 +02:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2024-05-02 15:55:35.323 +02:00 [INF] Executing handler method hon3y.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:35.323 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:35.323 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:35.323 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:35.325 +02:00 [INF] Executed page /Privacy in 1.977ms
+2024-05-02 15:55:35.325 +02:00 [INF] Executed endpoint '/Privacy'
+2024-05-02 15:55:35.325 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:35.325 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Privacy - 200 null text/html; charset=utf-8 5.6102ms
+2024-05-02 15:55:35.354 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:35.354 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:35.356 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.2063ms
+2024-05-02 15:55:35.367 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.439ms
+2024-05-02 15:55:38.525 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:38.528 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:38.528 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:38.528 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:38.528 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:38.528 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:38.528 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:38.530 +02:00 [INF] Executed page /Index in 1.5284ms
+2024-05-02 15:55:38.530 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:38.530 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:38.530 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.9261ms
+2024-05-02 15:55:38.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:38.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:38.558 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.6364ms
+2024-05-02 15:55:38.567 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.2898ms
+2024-05-02 15:55:39.678 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:39.680 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:39.680 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:39.680 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:39.680 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:39.680 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:39.680 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:39.681 +02:00 [INF] Executed page /Index in 1.5473ms
+2024-05-02 15:55:39.682 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:39.682 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:39.682 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.3808ms
+2024-05-02 15:55:39.706 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:39.706 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:39.707 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.6609ms
+2024-05-02 15:55:39.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.0992ms
+2024-05-02 15:55:40.488 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:40.490 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:40.490 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:40.490 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:40.490 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:40.490 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:40.490 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:40.491 +02:00 [INF] Executed page /Index in 0.9351ms
+2024-05-02 15:55:40.491 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:40.491 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:40.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.5473ms
+2024-05-02 15:55:40.513 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:40.513 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:40.514 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.4994ms
+2024-05-02 15:55:40.520 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.3741ms
+2024-05-02 15:55:40.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:40.657 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:40.657 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:40.657 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:40.657 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:40.657 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:40.657 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:40.658 +02:00 [INF] Executed page /Index in 0.8918ms
+2024-05-02 15:55:40.658 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:40.658 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:40.658 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.4493ms
+2024-05-02 15:55:40.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:40.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:40.684 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.8245ms
+2024-05-02 15:55:40.690 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.1862ms
+2024-05-02 15:55:40.823 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:40.825 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:40.825 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:40.825 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:40.825 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:40.825 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:40.825 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:40.826 +02:00 [INF] Executed page /Index in 1.1386ms
+2024-05-02 15:55:40.826 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:40.826 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:40.827 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.5572ms
+2024-05-02 15:55:40.847 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:40.847 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:40.849 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.516ms
+2024-05-02 15:55:40.854 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.1033ms
+2024-05-02 15:55:40.986 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:40.988 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:40.988 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:40.988 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:40.988 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:40.988 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:40.988 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:40.989 +02:00 [INF] Executed page /Index in 1.2468ms
+2024-05-02 15:55:40.989 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:40.989 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:40.989 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.686ms
+2024-05-02 15:55:41.009 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:41.010 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:41.012 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.9692ms
+2024-05-02 15:55:41.022 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.8988ms
+2024-05-02 15:55:41.152 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:41.154 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:41.154 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:41.154 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:41.155 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:41.155 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:41.155 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:41.156 +02:00 [INF] Executed page /Index in 1.3081ms
+2024-05-02 15:55:41.156 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:41.156 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:41.156 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.017ms
+2024-05-02 15:55:41.184 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:41.184 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:41.185 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.7394ms
+2024-05-02 15:55:41.191 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.671ms
+2024-05-02 15:55:41.303 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:41.305 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:41.305 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:41.305 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:41.305 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:41.305 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:41.305 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:41.306 +02:00 [INF] Executed page /Index in 0.8176ms
+2024-05-02 15:55:41.306 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:41.306 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:41.306 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.1081ms
+2024-05-02 15:55:41.323 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:41.323 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:41.324 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.8288ms
+2024-05-02 15:55:41.337 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.3998ms
+2024-05-02 15:55:41.476 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:41.478 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:41.479 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:41.479 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:41.479 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:41.479 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:41.479 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:41.479 +02:00 [INF] Executed page /Index in 0.8001ms
+2024-05-02 15:55:41.479 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:41.480 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:41.480 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.5463ms
+2024-05-02 15:55:41.499 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:41.501 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:41.503 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.5128ms
+2024-05-02 15:55:41.506 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.1003ms
+2024-05-02 15:55:41.639 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:41.641 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:41.641 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:41.641 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:41.641 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:41.641 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:41.641 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:41.643 +02:00 [INF] Executed page /Index in 1.465ms
+2024-05-02 15:55:41.643 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:41.643 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:41.643 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.3934ms
+2024-05-02 15:55:41.663 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:41.664 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:41.666 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.8203ms
+2024-05-02 15:55:41.673 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.6032ms
+2024-05-02 15:55:41.796 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:41.799 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:41.799 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:41.799 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:41.799 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:41.799 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:41.799 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:41.800 +02:00 [INF] Executed page /Index in 1.585ms
+2024-05-02 15:55:41.800 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:41.801 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:41.801 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.2831ms
+2024-05-02 15:55:41.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:41.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:41.827 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.9611ms
+2024-05-02 15:55:41.833 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.179ms
+2024-05-02 15:55:41.956 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:41.958 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:41.958 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:41.958 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:41.958 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:41.958 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:41.958 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:41.959 +02:00 [INF] Executed page /Index in 1.2197ms
+2024-05-02 15:55:41.959 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:41.959 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:41.960 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.7953ms
+2024-05-02 15:55:41.977 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:41.977 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:41.979 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.9733ms
+2024-05-02 15:55:41.984 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.9144ms
+2024-05-02 15:55:42.123 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:42.125 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:42.125 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:42.125 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:42.125 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:42.125 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:42.125 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:42.126 +02:00 [INF] Executed page /Index in 0.7524ms
+2024-05-02 15:55:42.126 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:42.126 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:42.126 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.134ms
+2024-05-02 15:55:42.147 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:42.147 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:42.149 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.768ms
+2024-05-02 15:55:42.154 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.9053ms
+2024-05-02 15:55:42.290 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:42.292 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:42.292 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:42.292 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:42.293 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:42.293 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:42.293 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:42.293 +02:00 [INF] Executed page /Index in 0.858ms
+2024-05-02 15:55:42.293 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:42.293 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:42.293 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.3666ms
+2024-05-02 15:55:42.310 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:42.310 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:42.311 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.8589ms
+2024-05-02 15:55:42.318 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.575ms
+2024-05-02 15:55:42.458 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:42.460 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:42.460 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:42.460 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:42.460 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:42.460 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:42.460 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:42.461 +02:00 [INF] Executed page /Index in 0.7916ms
+2024-05-02 15:55:42.461 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:42.461 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:42.461 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.2287ms
+2024-05-02 15:55:42.480 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:42.480 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:42.481 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.9138ms
+2024-05-02 15:55:42.487 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.159ms
+2024-05-02 15:55:42.639 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:42.641 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:42.641 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:42.641 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:42.641 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:42.641 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:42.641 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:42.642 +02:00 [INF] Executed page /Index in 1.1343ms
+2024-05-02 15:55:42.642 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:42.642 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:42.642 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.77ms
+2024-05-02 15:55:42.661 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:42.661 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:42.663 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.7602ms
+2024-05-02 15:55:42.668 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.5273ms
+2024-05-02 15:55:42.811 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:42.814 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:42.814 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:42.814 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:42.814 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:42.814 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:42.814 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:42.815 +02:00 [INF] Executed page /Index in 0.8933ms
+2024-05-02 15:55:42.815 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:42.815 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:42.815 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.7796ms
+2024-05-02 15:55:42.832 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:42.832 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:42.833 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.9538ms
+2024-05-02 15:55:42.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.5569ms
+2024-05-02 15:55:42.988 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:42.991 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:42.991 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:42.991 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:42.991 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:42.991 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:42.991 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:42.992 +02:00 [INF] Executed page /Index in 1.2319ms
+2024-05-02 15:55:42.992 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:42.992 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:42.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.2487ms
+2024-05-02 15:55:43.009 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:43.009 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:43.010 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.1834ms
+2024-05-02 15:55:43.015 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.9055ms
+2024-05-02 15:55:43.156 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:43.158 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:43.158 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:43.158 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:43.158 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:43.158 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:43.158 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:43.159 +02:00 [INF] Executed page /Index in 0.9415ms
+2024-05-02 15:55:43.159 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:43.159 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:43.159 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.2245ms
+2024-05-02 15:55:43.180 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:43.180 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:43.181 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.4224ms
+2024-05-02 15:55:43.187 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.0051ms
+2024-05-02 15:55:43.320 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:43.323 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:43.323 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:43.323 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:43.323 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:43.323 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:43.323 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:43.324 +02:00 [INF] Executed page /Index in 0.886ms
+2024-05-02 15:55:43.324 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:43.324 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:43.324 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.394ms
+2024-05-02 15:55:43.340 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:43.340 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:43.342 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.0629ms
+2024-05-02 15:55:43.347 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.4262ms
+2024-05-02 15:55:43.493 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:43.496 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:43.496 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:43.496 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:43.496 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:43.496 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:43.496 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:43.497 +02:00 [INF] Executed page /Index in 0.8251ms
+2024-05-02 15:55:43.497 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:43.497 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:43.497 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.4543ms
+2024-05-02 15:55:43.523 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:43.523 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:43.525 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.9344ms
+2024-05-02 15:55:43.530 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.0578ms
+2024-05-02 15:55:43.647 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:43.649 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:43.649 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:43.649 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:43.649 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:43.649 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:43.649 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:43.651 +02:00 [INF] Executed page /Index in 1.2854ms
+2024-05-02 15:55:43.651 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:43.651 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:43.651 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.0216ms
+2024-05-02 15:55:43.665 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:43.666 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:43.667 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.2759ms
+2024-05-02 15:55:43.673 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.8639ms
+2024-05-02 15:55:43.828 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:43.830 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:43.830 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:43.831 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:43.831 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:43.831 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:43.831 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:43.832 +02:00 [INF] Executed page /Index in 1.17ms
+2024-05-02 15:55:43.832 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:43.832 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:43.832 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.9227ms
+2024-05-02 15:55:43.860 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:43.860 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:43.861 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.0616ms
+2024-05-02 15:55:43.870 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.0457ms
+2024-05-02 15:55:43.995 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:43.997 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:43.997 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:43.997 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:43.997 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:43.997 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:43.997 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:43.998 +02:00 [INF] Executed page /Index in 0.7642ms
+2024-05-02 15:55:43.998 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:43.998 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:43.998 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.1196ms
+2024-05-02 15:55:44.013 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:44.013 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:44.014 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.5742ms
+2024-05-02 15:55:44.020 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.0794ms
+2024-05-02 15:55:44.148 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:44.151 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:44.151 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:44.151 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:44.151 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:44.151 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:44.151 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:44.152 +02:00 [INF] Executed page /Index in 1.2047ms
+2024-05-02 15:55:44.152 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:44.152 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:44.152 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.1553ms
+2024-05-02 15:55:44.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:44.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:44.181 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.7857ms
+2024-05-02 15:55:44.188 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.8124ms
+2024-05-02 15:55:44.308 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:44.310 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:44.310 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:44.310 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:44.311 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:44.311 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:44.311 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:44.311 +02:00 [INF] Executed page /Index in 0.893ms
+2024-05-02 15:55:44.311 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:44.311 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:44.312 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.4605ms
+2024-05-02 15:55:44.328 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:44.328 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:44.329 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.6474ms
+2024-05-02 15:55:44.336 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.8574ms
+2024-05-02 15:55:44.529 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:55:44.531 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:55:44.531 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:55:44.531 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:55:44.531 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:55:44.531 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:55:44.531 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:55:44.532 +02:00 [INF] Executed page /Index in 0.8982ms
+2024-05-02 15:55:44.532 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:55:44.532 +02:00 [INF] {RemoteIpAddress} https localhost:44359
+2024-05-02 15:55:44.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.8364ms
+2024-05-02 15:55:44.548 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:55:44.548 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:55:44.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.5711ms
+2024-05-02 15:55:44.555 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.7304ms
+2024-05-02 15:57:05.597 +02:00 [INF] Testing
+2024-05-02 15:57:06.253 +02:00 [INF] User profile is available. Using 'C:\Users\detec\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-02 15:57:06.416 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-02 15:57:06.417 +02:00 [INF] Hosting environment: Development
+2024-05-02 15:57:06.417 +02:00 [INF] Content root path: C:\Users\detec\source\repos\hon3y\hon3y
+2024-05-02 15:57:06.455 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:06.563 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:06.603 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:06.610 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:06.615 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:06.618 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:06.618 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:06.696 +02:00 [INF] Executed page /Index in 90.6824ms
+2024-05-02 15:57:06.698 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:06.700 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:06.706 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 255.2507ms
+2024-05-02 15:57:06.761 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:06.761 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:06.763 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 2.3586ms
+2024-05-02 15:57:06.793 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.7346ms
+2024-05-02 15:57:08.332 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Formulier - null null
+2024-05-02 15:57:08.340 +02:00 [INF] Executing endpoint '/Formulier'
+2024-05-02 15:57:08.344 +02:00 [INF] Route matched with {page = "/Formulier"}. Executing page /Formulier
+2024-05-02 15:57:08.344 +02:00 [INF] Executing handler method hon3y.Pages.FormModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:08.344 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:08.344 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:08.344 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:08.361 +02:00 [INF] Executed page /Formulier in 17.1603ms
+2024-05-02 15:57:08.361 +02:00 [INF] Executed endpoint '/Formulier'
+2024-05-02 15:57:08.361 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:08.362 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Formulier - 200 null text/html; charset=utf-8 29.8113ms
+2024-05-02 15:57:08.394 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:08.394 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:08.396 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.904ms
+2024-05-02 15:57:08.417 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.0549ms
+2024-05-02 15:57:09.127 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Formulier - null null
+2024-05-02 15:57:09.131 +02:00 [INF] Executing endpoint '/Formulier'
+2024-05-02 15:57:09.132 +02:00 [INF] Route matched with {page = "/Formulier"}. Executing page /Formulier
+2024-05-02 15:57:09.132 +02:00 [INF] Executing handler method hon3y.Pages.FormModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:09.132 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:09.132 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:09.132 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:09.135 +02:00 [INF] Executed page /Formulier in 2.7849ms
+2024-05-02 15:57:09.135 +02:00 [INF] Executed endpoint '/Formulier'
+2024-05-02 15:57:09.135 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:09.135 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Formulier - 200 null text/html; charset=utf-8 8.0508ms
+2024-05-02 15:57:09.164 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:09.164 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:09.165 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.8643ms
+2024-05-02 15:57:09.173 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.5386ms
+2024-05-02 15:57:10.254 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:10.257 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:10.257 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:10.257 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:10.257 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:10.257 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:10.257 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:10.259 +02:00 [INF] Executed page /Index in 1.7048ms
+2024-05-02 15:57:10.259 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:10.259 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:10.259 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.7415ms
+2024-05-02 15:57:10.289 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:10.289 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:10.290 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.2841ms
+2024-05-02 15:57:10.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.5905ms
+2024-05-02 15:57:11.462 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:11.465 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:11.465 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:11.465 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:11.465 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:11.465 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:11.465 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:11.467 +02:00 [INF] Executed page /Index in 2.1527ms
+2024-05-02 15:57:11.467 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:11.467 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:11.468 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 5.6ms
+2024-05-02 15:57:11.490 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:11.493 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:11.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.8526ms
+2024-05-02 15:57:11.499 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.6445ms
+2024-05-02 15:57:11.659 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:11.661 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:11.661 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:11.661 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:11.662 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:11.662 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:11.662 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:11.663 +02:00 [INF] Executed page /Index in 1.2174ms
+2024-05-02 15:57:11.663 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:11.663 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:11.663 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.814ms
+2024-05-02 15:57:11.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:11.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:11.684 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.8431ms
+2024-05-02 15:57:11.690 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.7244ms
+2024-05-02 15:57:11.840 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:11.843 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:11.843 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:11.843 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:11.843 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:11.843 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:11.843 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:11.844 +02:00 [INF] Executed page /Index in 1.2239ms
+2024-05-02 15:57:11.845 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:11.845 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:11.845 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.5997ms
+2024-05-02 15:57:11.872 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:11.872 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:11.873 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.9892ms
+2024-05-02 15:57:11.881 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.9395ms
+2024-05-02 15:57:12.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:12.006 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:12.007 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:12.007 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:12.007 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:12.007 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:12.007 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:12.008 +02:00 [INF] Executed page /Index in 1.021ms
+2024-05-02 15:57:12.008 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:12.008 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:12.008 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.6161ms
+2024-05-02 15:57:12.027 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:12.027 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:12.028 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.7492ms
+2024-05-02 15:57:12.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.7318ms
+2024-05-02 15:57:12.183 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:12.186 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:12.186 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:12.186 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:12.186 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:12.186 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:12.186 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:12.187 +02:00 [INF] Executed page /Index in 1.0118ms
+2024-05-02 15:57:12.187 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:12.187 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:12.187 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.8331ms
+2024-05-02 15:57:12.208 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:12.208 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:12.209 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.6782ms
+2024-05-02 15:57:12.215 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.6873ms
+2024-05-02 15:57:12.354 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:12.357 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:12.357 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:12.357 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:12.357 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:12.357 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:12.357 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:12.358 +02:00 [INF] Executed page /Index in 1.1331ms
+2024-05-02 15:57:12.358 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:12.358 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:12.359 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 4.3025ms
+2024-05-02 15:57:12.376 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:12.376 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:12.377 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.0937ms
+2024-05-02 15:57:12.388 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.5714ms
+2024-05-02 15:57:12.534 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:12.536 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:12.536 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:12.536 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:12.536 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:12.536 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:12.536 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:12.537 +02:00 [INF] Executed page /Index in 0.9759ms
+2024-05-02 15:57:12.537 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:12.537 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:12.537 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.6438ms
+2024-05-02 15:57:12.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:12.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:12.561 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.9683ms
+2024-05-02 15:57:12.567 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.8039ms
+2024-05-02 15:57:14.147 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Privacy - null null
+2024-05-02 15:57:14.149 +02:00 [INF] Executing endpoint '/Privacy'
+2024-05-02 15:57:14.152 +02:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2024-05-02 15:57:14.152 +02:00 [INF] Executing handler method hon3y.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:14.153 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:14.153 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:14.153 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:14.156 +02:00 [INF] Executed page /Privacy in 3.8409ms
+2024-05-02 15:57:14.156 +02:00 [INF] Executed endpoint '/Privacy'
+2024-05-02 15:57:14.156 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:14.156 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Privacy - 200 null text/html; charset=utf-8 9.3268ms
+2024-05-02 15:57:14.181 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:14.181 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:14.182 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.7595ms
+2024-05-02 15:57:14.188 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.9396ms
+2024-05-02 15:57:14.992 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Privacy - null null
+2024-05-02 15:57:14.994 +02:00 [INF] Executing endpoint '/Privacy'
+2024-05-02 15:57:14.994 +02:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2024-05-02 15:57:14.994 +02:00 [INF] Executing handler method hon3y.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:14.994 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:14.994 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:14.994 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:14.995 +02:00 [INF] Executed page /Privacy in 1.0836ms
+2024-05-02 15:57:14.995 +02:00 [INF] Executed endpoint '/Privacy'
+2024-05-02 15:57:14.995 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:14.995 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Privacy - 200 null text/html; charset=utf-8 3.5843ms
+2024-05-02 15:57:15.022 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:15.022 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:15.024 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.0863ms
+2024-05-02 15:57:15.029 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.8389ms
+2024-05-02 15:57:16.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/Privacy - null null
+2024-05-02 15:57:16.145 +02:00 [INF] Executing endpoint '/Privacy'
+2024-05-02 15:57:16.145 +02:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2024-05-02 15:57:16.145 +02:00 [INF] Executing handler method hon3y.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:16.145 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:16.145 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:16.145 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:16.147 +02:00 [INF] Executed page /Privacy in 1.4975ms
+2024-05-02 15:57:16.147 +02:00 [INF] Executed endpoint '/Privacy'
+2024-05-02 15:57:16.147 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:16.147 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/Privacy - 200 null text/html; charset=utf-8 4.0032ms
+2024-05-02 15:57:16.178 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:16.178 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:16.180 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 1.178ms
+2024-05-02 15:57:16.185 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.0587ms
+2024-05-02 15:57:17.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/ - null null
+2024-05-02 15:57:17.894 +02:00 [INF] Executing endpoint '/Index'
+2024-05-02 15:57:17.894 +02:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2024-05-02 15:57:17.894 +02:00 [INF] Executing handler method hon3y.Pages.IndexModel.OnGet - ModelState is "Valid"
+2024-05-02 15:57:17.894 +02:00 [INF] Executed handler method OnGet, returned result .
+2024-05-02 15:57:17.894 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-02 15:57:17.894 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-02 15:57:17.895 +02:00 [INF] Executed page /Index in 1.0979ms
+2024-05-02 15:57:17.895 +02:00 [INF] Executed endpoint '/Index'
+2024-05-02 15:57:17.895 +02:00 [INF] 127.0.0.1 https localhost:44359
+2024-05-02 15:57:17.895 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/ - 200 null text/html; charset=utf-8 3.4922ms
+2024-05-02 15:57:17.925 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-02 15:57:17.925 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44359/_vs/browserLink - null null
+2024-05-02 15:57:17.926 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 0.8342ms
+2024-05-02 15:57:17.933 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44359/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.7398ms

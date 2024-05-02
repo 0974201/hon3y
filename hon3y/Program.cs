@@ -49,13 +49,15 @@ try
     // https://stackoverflow.com/questions/72940591/how-to-display-clientip-in-logs-using-serilog-in-net-core
     app.UseSerilogRequestLogging(options =>
     {
-        options.MessageTemplate = "{RemoteIpAddress} {RequestScheme} {RequestHost} {RequestMethod}";
-        options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+        options.MessageTemplate = "{RemoteIpAddress} {RequestScheme} {RequestHost}";
+
+        //options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+
         options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
         {
             diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
             diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
-            diagnosticContext.Set("RequestIpAddress", httpContext.Connection.RemoteIpAddress);
+            diagnosticContext.Set("RemoteIpAddress", httpContext.Connection.RemoteIpAddress);
         };
     });
     app.UseForwardedHeaders();
