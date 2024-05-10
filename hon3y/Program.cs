@@ -15,16 +15,6 @@ try
 
     //log connections
 
-    builder.WebHost.ConfigureKestrel((context, serverOptions) =>
-    {
-        var section = context.Configuration.GetSection("Kestrel");
-
-        serverOptions.ListenLocalhost(8000, listenOptions =>
-        {
-            listenOptions.UseConnectionLogging();
-        });
-    });
-
     builder.Services.AddSerilog(); //logging
     builder.Services.AddRazorPages();
     builder.Services.AddHttpContextAccessor();
@@ -49,7 +39,7 @@ try
     // https://stackoverflow.com/questions/72940591/how-to-display-clientip-in-logs-using-serilog-in-net-core
     app.UseSerilogRequestLogging(options =>
     {
-        options.MessageTemplate = "{RemoteIpAddress} {RequestScheme} {RequestHost}";
+        options.MessageTemplate = "/* ------- */ \n {RemoteIpAddress} {RequestScheme}:{RequestHost}";
 
         //options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
 
