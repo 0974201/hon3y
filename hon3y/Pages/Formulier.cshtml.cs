@@ -7,7 +7,7 @@ namespace hon3y.Pages
     {
 
         private readonly ILogger<FormModel> _logger;
-        public string emailadres { get; set; }
+        public string Emailadres { get; set; }
 
         public FormModel(ILogger<FormModel> logger)
         {
@@ -18,8 +18,7 @@ namespace hon3y.Pages
         {
         }
 
-        [IgnoreAntiforgeryToken] //dit hoort hier dus niet 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             var voornaam = Request.Form["voornaam"];
             var achternaam = Request.Form["achternaam"];
@@ -38,6 +37,8 @@ namespace hon3y.Pages
             _logger.LogInformation(telefoonnummer);
             _logger.LogInformation(reden);
             _logger.LogInformation(datum);
+
+            return RedirectToPage("Index");
         }
     }
 }
