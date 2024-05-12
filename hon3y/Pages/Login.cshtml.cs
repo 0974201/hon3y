@@ -15,7 +15,7 @@ namespace hon3y.Pages
         public void OnGet()
         {
         }
-        public void OnPost()
+        public IActionResult OnPost()
         {
             var email = Request.Form["email"];
             var password = Request.Form["password"]; 
@@ -25,6 +25,7 @@ namespace hon3y.Pages
             _logger.LogInformation(email.ToString());
             _logger.LogInformation(password);
 
+            return null;
         }
     }
 }
