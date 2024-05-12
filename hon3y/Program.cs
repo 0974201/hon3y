@@ -2,7 +2,7 @@ using Serilog;
 using Serilog.Events;
 
 Log.Logger = new LoggerConfiguration()
-    .WriteTo.File("test.txt", rollingInterval: RollingInterval.Hour)
+    .WriteTo.File("Logs/test-.txt", rollingInterval: RollingInterval.Hour)
     .CreateLogger();
 
 Log.Information("Starting up...");
