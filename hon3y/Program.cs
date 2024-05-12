@@ -56,12 +56,12 @@ try
     });
 
     app.UseForwardedHeaders();
-    //app.UseHttpsRedirection();
+    ///app.UseHttpsRedirection();
     app.UseStaticFiles();
 
     app.UseRouting();
 
-    app.UseAuthorization();
+    //app.UseAuthorization();
 
     app.MapRazorPages();
 
