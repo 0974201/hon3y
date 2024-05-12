@@ -5,6 +5,8 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("test.txt", rollingInterval: RollingInterval.Hour)
     .CreateLogger();
 
+Log.Information("Starting up...");
+
 try
 {
     Log.Information("Testing");
@@ -37,19 +39,22 @@ try
 
     //app.Logger();
     // https://stackoverflow.com/questions/72940591/how-to-display-clientip-in-logs-using-serilog-in-net-core
+
     app.UseSerilogRequestLogging(options =>
     {
-        options.MessageTemplate = "/* ------- */ \n {RemoteIpAddress} {RequestScheme}:{RequestHost}";
+        options.MessageTemplate = "/* ------- */ {RemoteIpAddress} {RequestScheme}:{RequestHost} /* ------------ */ \n HTTP Headers: {Headers}";
 
         //options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
 
         options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
         {
+            diagnosticContext.Set("RemoteIpAddress", httpContext.Connection.RemoteIpAddress);
             diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
             diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
-            diagnosticContext.Set("RemoteIpAddress", httpContext.Connection.RemoteIpAddress);
+            diagnosticContext.Set("Headers", httpContext.Request.Headers);
         };
     });
+
     app.UseForwardedHeaders();
     //app.UseHttpsRedirection();
     app.UseStaticFiles();
@@ -65,4 +70,8 @@ try
 catch (Exception ex)
 {
     Log.Fatal(ex, "Something went wrong");
+}
+finally
+{
+    Log.CloseAndFlush();
 }

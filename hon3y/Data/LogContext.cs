@@ -1,12 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using hon3y.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace hon3y.Models
+namespace hon3y.Data
 {
-    public class LogContext: DbContext
+    public class LogContext : DbContext
     {
         public LogContext(DbContextOptions options) : base(options)
         {
-            
+
         }
 
         public DbSet<Logs> Log { get; set; }

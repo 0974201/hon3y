@@ -5,11 +5,26 @@ namespace hon3y.Pages
 {
     public class LoginModel : PageModel
     {
+        private readonly ILogger<LoginModel> _logger;   
+
+        public LoginModel(ILogger<LoginModel> logger)
+        {
+            _logger = logger;
+        }
+
         public void OnGet()
         {
         }
         public IActionResult OnPost()
         {
+            var email = Request.Form["email"];
+            var password = Request.Form["password"]; 
+
+            _logger.LogInformation("Test");
+
+            _logger.LogInformation(email.ToString());
+            _logger.LogInformation(password);
+
             return null;
         }
     }

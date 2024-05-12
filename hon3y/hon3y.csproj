@@ -20,18 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="web.config" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="web.config" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="web.config" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
