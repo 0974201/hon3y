@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.Sql; //google ado net. eventueel periodiek kijken of db nog correct werkt, anders code schrijven dat db zichzelf ""repareert""
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace hon3y.Pages
@@ -17,7 +18,7 @@ namespace hon3y.Pages
         {
         }
 
-        [IgnoreAntiforgeryToken]
+        //[IgnoreAntiforgeryToken]
         public void OnPost()
         {
             var voornaam = Request.Form["voornaam"];
