@@ -1,0 +1,66 @@
+﻿@@page
+@@model hon3y.Pages.IndexDBModel
+
+@@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @@Html.DisplayNameFor(model => model.Afspraak[0].Voornaam)
+            </th>
+            <th>
+                @@Html.DisplayNameFor(model => model.Afspraak[0].Achternaam)
+            </th>
+            <th>
+                @@Html.DisplayNameFor(model => model.Afspraak[0].Email)
+            </th>
+            <th>
+                @@Html.DisplayNameFor(model => model.Afspraak[0].Telefoonnummer)
+            </th>
+            <th>
+                @@Html.DisplayNameFor(model => model.Afspraak[0].AfspraakReden)
+            </th>
+            <th>
+                @@Html.DisplayNameFor(model => model.Afspraak[0].Datum)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@@foreach (var item in Model.Afspraak) {
+        <tr>
+            <td>
+                @@Html.DisplayFor(modelItem => item.Voornaam)
+            </td>
+            <td>
+                @@Html.DisplayFor(modelItem => item.Achternaam)
+            </td>
+            <td>
+                @@Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @@Html.DisplayFor(modelItem => item.Telefoonnummer)
+            </td>
+            <td>
+                @@Html.DisplayFor(modelItem => item.AfspraakReden)
+            </td>
+            <td>
+                @@Html.DisplayFor(modelItem => item.Datum)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@@item.AfspraakId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@@item.AfspraakId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@@item.AfspraakId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

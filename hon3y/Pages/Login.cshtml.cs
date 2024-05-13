@@ -22,7 +22,7 @@ namespace hon3y.Pages
 
             _logger.LogInformation("Test");
 
-            _logger.LogInformation(email.ToString());
+            _logger.LogInformation(email);
             _logger.LogInformation(password);
 
         }
