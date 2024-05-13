@@ -1,3 +1,5 @@
+using hon3y.Data;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 
@@ -24,6 +26,8 @@ try
     {
         options.ForwardedForHeaderName = "X-Coming-From";
     });
+
+    builder.Services.AddDbContext<FormulierenContext>(options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=aspnet-53bc9b9d-9d6a-45d4-8429-2a2761773502;Trusted_Connection=True;MultipleActiveResultSets=true"));
 
     var app = builder.Build();
 
@@ -54,6 +58,8 @@ try
             diagnosticContext.Set("Headers", httpContext.Request.Headers);
         };
     });
+
+
 
     app.UseForwardedHeaders();
     //app.UseHttpsRedirection();
