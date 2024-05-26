@@ -28,6 +28,24 @@ namespace hon3y.Data
             }
         }
 
+        /* public void CheckDatabase()
+        {
+            using(var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+
+                var checkTable = connection.CreateCommand();
+                checkTable.CommandText = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='Login'";
+               
+                var tableExists = (long)checkTable.ExecuteScalar() > 0;
+
+                if (!tableExists)
+                {
+                    CreateTables();
+                }
+            }
+        } */
+
         public void CreateTables()
         {
             using (var connection = new SqliteConnection(_connectionString))
