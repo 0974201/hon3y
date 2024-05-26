@@ -38,9 +38,8 @@ try
 
     //Database
     DbInit dbInit = new DbInit(configuration);
-    string dbName = "Test";
-    dbInit.CreateDatabase(dbName);
-    dbInit.CreateTables(dbName);
+    dbInit.CreateDatabase();
+    dbInit.CreateTables();
 
 
     //okay maar hoe sloop ik alles hier in sldkfjsldk

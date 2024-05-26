@@ -1,12 +1,3 @@
 {
-  "dependencies": {
-    "mssql1": {
-      "type": "mssql",
-      "connectionId": "Test"
-    },
-    "sqlite1": {
-      "type": "sqlite",
-      "connectionId": "TestDB"
-    }
-  }
+  "dependencies": {}
 }

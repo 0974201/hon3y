@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using Microsoft.Data.SqlClient;
 using ConfigurationManager = System.Configuration.ConfigurationManager;
+using Microsoft.Data.Sqlite;
 
 namespace hon3y.Data
 {
@@ -14,39 +15,31 @@ namespace hon3y.Data
         public DbInit(IConfiguration configuration)
         {
             _configuration = configuration;
-           _connectionString = _configuration.GetConnectionString("DefaultConnection");
+            _connectionString = _configuration.GetConnectionString("DefaultConnection");
         }
 
-        public void CreateDatabase(string databaseName)
+        public void CreateDatabase()
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (var connection = new SqliteConnection(_connectionString))
             {
-                string createDatabaseQuery = $"IF DB_ID('{databaseName}') IS NULL CREATE DATABASE {databaseName}";
-                SqlCommand command = new SqlCommand(createDatabaseQuery, connection);
-
                 connection.Open();
-                command.ExecuteNonQuery();
             }
         }
 
-        public void CreateTables(string testDB)
+        public void CreateTables()
         {
-            string databaseConnectionString = _configuration.GetConnectionString("DatabaseConnection");
-
-            using (SqlConnection connection = new SqlConnection(databaseConnectionString))
+            using (var connection = new SqliteConnection(_connectionString))
             {
-                string createTableQuery = @"
-                IF OBJECT_ID('dbo.Test', 'U') IS NULL
-                CREATE TABLE Test (
-                    Id INT PRIMARY KEY IDENTITY,
-                    Name NVARCHAR(50) NOT NULL
-                )";
-                SqlCommand command = new SqlCommand(createTableQuery, connection);
-
                 connection.Open();
-                command.ExecuteNonQuery();
+
+                var createTableCmd = connection.CreateCommand();
+                createTableCmd.CommandText = @"
+                CREATE TABLE IF NOT EXISTS TestDB (
+                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Name TEXT NOT NULL
+                );";
+                createTableCmd.ExecuteNonQuery();
             }
         }
-
     }
 }
