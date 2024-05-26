@@ -11,11 +11,13 @@ namespace hon3y.Data
     {
         private readonly IConfiguration _configuration;
         private readonly string _connectionString;
+        private readonly string _connectionString2; //electric boogaloo
 
         public DbInit(IConfiguration configuration)
         {
             _configuration = configuration;
             _connectionString = _configuration.GetConnectionString("DefaultConnection");
+            _connectionString2 = _configuration.GetConnectionString("NotDefaultConnection");
         }
 
         public void CreateDatabase()
@@ -32,13 +34,65 @@ namespace hon3y.Data
             {
                 connection.Open();
 
-                var createTableCmd = connection.CreateCommand();
-                createTableCmd.CommandText = @"
-                CREATE TABLE IF NOT EXISTS TestDB (
+                //maakt tabellen aan als ze niet bestaan
+
+                var createTable = connection.CreateCommand();
+                createTable.CommandText = @"
+                CREATE TABLE IF NOT EXISTS Login (
+                    LoginId INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Email TEXT,
+                    Password TEXT
+                );
+
+                CREATE TABLE IF NOT EXISTS Afspraken (
+                    AfspraakId INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Voornaam TEXT,
+                    Achternaam TEXT,
+                    Email TEXT,
+                    Telefoonnummer INTEGER,
+                    AfspraakReden TEXT,
+                    Datum
+                );
+
+                CREATE TABLE IF NOT EXISTS Inzendingen (
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    Name TEXT NOT NULL
+                    Voornaam TEXT,
+                    Achternaam TEXT,
+                    Email TEXT,
+                    Bestand BLOB
                 );";
-                createTableCmd.ExecuteNonQuery();
+                createTable.ExecuteNonQuery();
+            }
+        }
+
+        public void CreateLogsDatabase()
+        {
+            using (var connection = new SqliteConnection(_connectionString2))
+            {
+                connection.Open();
+            }
+        }
+
+        public void CreateLogDBTable()
+        {
+            using (var connection = new SqliteConnection(_connectionString2))
+            {
+                connection.Open();
+
+                var createTable = connection.CreateCommand();
+                createTable.CommandText = @"
+                CREATE TABLE IF NOT EXISTS Logs (
+                    LogId INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Datum TEXT,
+                    Email TEXT,
+                    Password TEXT
+                    Voornaam TEXT,
+                    Achternaam TEXT,
+                    Telefoonnummer INTEGER,
+                    AfspraakReden TEXT,
+                    Bestand BLOB
+                );";
+                createTable.ExecuteNonQuery();
             }
         }
     }

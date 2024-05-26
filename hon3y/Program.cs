@@ -40,6 +40,8 @@ try
     DbInit dbInit = new DbInit(configuration);
     dbInit.CreateDatabase();
     dbInit.CreateTables();
+    dbInit.CreateLogsDatabase();
+    dbInit.CreateLogDBTable();
 
 
     //okay maar hoe sloop ik alles hier in sldkfjsldk
