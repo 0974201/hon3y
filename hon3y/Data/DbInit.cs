@@ -73,7 +73,7 @@ namespace hon3y.Data
                 );
 
                 CREATE TABLE IF NOT EXISTS Inzendingen (
-                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    InzendingId INTEGER PRIMARY KEY AUTOINCREMENT,
                     Voornaam TEXT,
                     Achternaam TEXT,
                     Email TEXT,
