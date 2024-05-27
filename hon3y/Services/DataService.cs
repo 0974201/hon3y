@@ -21,6 +21,9 @@ namespace hon3y.Services
             using (var connection = new SqliteConnection(_connectionString))
             {
                 connection.Open();
+                var command = connection.CreateCommand();
+                command.CommandText = "INSERT INTO {Table} (val1, val2, val3, val4, val5) VALUES (?,?,?,?,?)";
+                command.ExecuteNonQuery();
             }
         }
     }
