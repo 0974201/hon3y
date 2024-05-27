@@ -1,5 +1,5 @@
 using hon3y.Data;
-using Microsoft.EntityFrameworkCore;
+using hon3y.Services;
 using Serilog;
 using Serilog.Events;
 
@@ -26,6 +26,7 @@ try
     {
         options.ForwardedForHeaderName = "X-Coming-From";
     });
+    builder.Services.AddTransient<DataService>();
 
     IConfiguration configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
@@ -38,13 +39,10 @@ try
 
     //Database
     DbInit dbInit = new DbInit(configuration);
-    dbInit.CreateDatabase();
-    dbInit.CreateTables();
-    dbInit.CreateLogsDatabase();
-    dbInit.CreateLogDBTable();
-
-
-    //okay maar hoe sloop ik alles hier in sldkfjsldk
+    dbInit.CreateDatabase(); //maakt database voor honeypot aan
+    dbInit.CreateTables(); //maakt de tabels voor de database aan
+    dbInit.CreateLogsDatabase(); //maakt de database voor de logs aan
+    dbInit.CreateLogDBTable(); //maakt de tabel voor de log database aan
 
     // Configure the HTTP request pipeline.
     if (!app.Environment.IsDevelopment())
