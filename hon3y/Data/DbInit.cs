@@ -68,7 +68,7 @@ namespace hon3y.Data
                     Achternaam TEXT,
                     Email TEXT,
                     Telefoonnummer INTEGER,
-                    AfspraakReden TEXT,
+                    Afspraakreden TEXT,
                     Datum
                 );
 
