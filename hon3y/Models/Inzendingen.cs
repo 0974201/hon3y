@@ -7,13 +7,13 @@ namespace hon3y.Models
     {
         public int UploadId { get; set; }
         
-        [Required]
+        [Required (ErrorMessage = "bruh")]
         public string Voornaam { get; set; }
         
-        [Required]
+        [Required(ErrorMessage = "bruh")]
         public string Achternaam { get; set; }
         
-        [Required]
+        [Required (ErrorMessage = "bruh")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 

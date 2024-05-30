@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Text.RegularExpressions;
 using Microsoft.Data.Sqlite;
 using System.Data;
@@ -8,14 +7,14 @@ using hon3y.Models;
 
 namespace hon3y.Pages
 {
-    public class Formulier2Model : PageModel
+    public class Inzendingen : PageModel
     {
 
-        private readonly ILogger<Formulier2Model> _logger;
+        private readonly ILogger<Inzendingen> _logger;
 
         private readonly IDbConnection _connection;
 
-        public Formulier2Model(ILogger<Formulier2Model> logger, IDbConnection connection)
+        public Inzendingen(ILogger<Inzendingen> logger, IDbConnection connection)
         {
             _logger = logger;
             _connection = connection;
@@ -26,7 +25,7 @@ namespace hon3y.Pages
         }
 
         [BindProperty]
-        public Inzendingen Inzending { get; set; } = new Inzendingen();
+        public Models.Inzendingen Inzending { get; set; } = new Models.Inzendingen();
 
         /*public void OnPost()
         {
