@@ -55,22 +55,22 @@ namespace hon3y.Pages
         {
             if (ModelState.IsValid)
             {
-                return Page();
+                return RedirectToPage("Privacy");
             }
 
-            using (var connection = (SqliteConnection)_connection)
+            using (var connection = (SqliteConnection) _connection)
             {
                 connection.Open();
 
                 var command = connection.CreateCommand();
-                command.CommandText = @"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES (@Voornaam, @Achternaam, @Emailadres, @Telefoonnummer, @Afspraakreden, @Datum)";
+                command.CommandText = "INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES (Voornaam, Achternaam, Emailadres, Telefoonnummer, Afspraakreden, Datum)";
 
-                command.Parameters.AddWithValue(@"Voornaam", Afspraak.Voornaam);
-                command.Parameters.AddWithValue(@"Achternaam", Afspraak.Achternaam);
-                command.Parameters.AddWithValue(@"Emailadres", Afspraak.Email);
-                command.Parameters.AddWithValue(@"Telefoonnummer", Afspraak.Telefoonnummer);
-                command.Parameters.AddWithValue(@"Afspraakreden", Afspraak.AfspraakReden);
-                command.Parameters.AddWithValue(@"Datum", Afspraak.Datum);
+                command.Parameters.Add(new SqliteParameter("Voornaam", Afspraak.Voornaam ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Achternaam", Afspraak.Achternaam ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Emailadres", Afspraak.Email ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Telefoonnummer", Afspraak.Telefoonnummer ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Afspraakreden", Afspraak.AfspraakReden ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Datum", Afspraak.Datum ?? (object) DBNull.Value));
 
                 await command.ExecuteNonQueryAsync();
             }

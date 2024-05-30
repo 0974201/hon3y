@@ -56,10 +56,11 @@ namespace hon3y.Pages
                 var command = connection.CreateCommand();
                 command.CommandText = @"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES (@Voornaam, @Achternaam, @Emailadres, @Bestand)";
 
-                command.Parameters.AddWithValue(@"Voornaam", Inzending.Voornaam);
-                command.Parameters.AddWithValue(@"Achternaam", Inzending.Achternaam);
-                command.Parameters.AddWithValue(@"Emailadres", Inzending.Email);
-                command.Parameters.AddWithValue(@"Bestand", data);
+
+                command.Parameters.Add(new SqliteParameter("Voornaam", Inzending.Voornaam ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Achternaam", Inzending.Achternaam ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Emailadres", Inzending.Email ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Bestand", data ?? (object) DBNull.Value));
 
                 await command.ExecuteNonQueryAsync();
             }
