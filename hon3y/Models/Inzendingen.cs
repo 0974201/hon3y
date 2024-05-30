@@ -3,19 +3,21 @@ using System.ComponentModel.DataAnnotations;
 
 namespace hon3y.Models
 {
-    public class Upload
+    public class Inzendingen
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UploadId { get; set; }
-
+        
+        [Required]
         public string Voornaam { get; set; }
-
+        
+        [Required]
         public string Achternaam { get; set; }
-
+        
+        [Required]
         [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
+        public string Emailadres { get; set; }
 
         [DataType(DataType.Upload)]
-        public string UploadedFile { get; set; }
+        public byte[] UploadedFile { get; set; }
     }
 }

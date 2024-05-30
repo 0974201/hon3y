@@ -5,7 +5,6 @@ namespace hon3y.Models
 {
     public class Login
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LoginId { get; set; }
 
         [DataType(DataType.EmailAddress)]
