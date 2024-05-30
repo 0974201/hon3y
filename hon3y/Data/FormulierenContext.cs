@@ -11,7 +11,7 @@ namespace hon3y.Data
         }
 
         public DbSet<Login> Login { get; set; }
-        public DbSet<Upload> Uploads { get; set; }
+        public DbSet<Inzendingen> Inzendingen { get; set; }
         public DbSet<Afspraak> Afspraken { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -36,7 +36,7 @@ namespace hon3y.Data
             });*/
 
             modelBuilder.Entity<Login>().ToTable("Login").Property(e => e.LoginId).ValueGeneratedOnAdd();
-            modelBuilder.Entity<Upload>().ToTable("Upload").Property(e => e.UploadId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<Inzendingen>().ToTable("Upload").Property(e => e.UploadId).ValueGeneratedOnAdd();
             modelBuilder.Entity<Afspraak>().ToTable("Afspraken").Property(e => e.AfspraakId).ValueGeneratedOnAdd();
         }
 

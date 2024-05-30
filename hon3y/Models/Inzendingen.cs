@@ -15,9 +15,9 @@ namespace hon3y.Models
         
         [Required]
         [DataType(DataType.EmailAddress)]
-        public string Emailadres { get; set; }
+        public string Email { get; set; }
 
         [DataType(DataType.Upload)]
-        public byte[] UploadedFile { get; set; }
+        public byte[] Bestand { get; set; }
     }
 }

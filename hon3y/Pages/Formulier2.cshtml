@@ -6,14 +6,23 @@
 
 <div class="form-group">
     <form asp-antiforgery="true" method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+
         <label for="voornaam">Voornaam:</label>
-        <input name="voornaam" type="text" placeholder="voornaam" class="form-control" /><br />
+        <span asp-validation-for="Inzending.Voornaam"></span>
+        <input name="voornaam" type="text" asp-for="Inzending.Voornaam" placeholder="voornaam" class="form-control" /><br />
+        
         <label for="achternaam">Achternaam:</label>
-        <input name="achternaam" type="text" placeholder="achternaam" class="form-control" /><br />
+        <span asp-validation-for="Inzending.Achternaam"></span>
+        <input name="achternaam" type="text" asp-for="Inzending.Achternaam" placeholder="achternaam" class="form-control" /><br />
+        
         <label for="emailadres">Emailadres:</label>
-        <input name="emailadres" type="email" placeholder="email" class="form-control" /><br />
+        <span asp-validation-for="Inzending.Email"></span>
+        <input name="emailadres" type="email" asp-for="Inzending.Email" placeholder="email" class="form-control" /><br />
         <label for="uploadedFile">Bestand:</label>
-        <input name="uploadedFile" type="file" class="form-control" /><br />
+        
+        <span asp-validation-for="Inzending.Bestand"></span>
+        <input name="uploadedFile" type="file" asp-for="Inzending.Bestand" class="form-control" /><br />
         <button class="btn btn-default">Verzend</button>
     </form>
 </div>
