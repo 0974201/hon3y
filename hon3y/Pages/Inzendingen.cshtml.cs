@@ -67,7 +67,7 @@ namespace hon3y.Pages
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error:");
+                _logger.LogError(ex, "Error: ");
             }
             
             var voornaam = Request.Form["voornaam"];
@@ -82,6 +82,7 @@ namespace hon3y.Pages
             _logger.LogInformation(voornaam);
             _logger.LogInformation(achternaam);
             _logger.LogInformation(emailadres);
+            _logger.LogInformation(uploadedFile);
 
             return RedirectToPage("Privacy");
         }

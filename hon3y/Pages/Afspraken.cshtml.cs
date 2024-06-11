@@ -35,21 +35,28 @@ namespace hon3y.Pages
                 return RedirectToPage("Privacy");
             }
 
-            using (var connection = (SqliteConnection) _connection)
+            try
             {
-                connection.Open();
+                using (var connection = (SqliteConnection)_connection)
+                {
+                    connection.Open();
 
-                var command = connection.CreateCommand();
-                command.CommandText = @"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES (@Voornaam, @Achternaam, @Emailadres, @Telefoonnummer, @Afspraakreden, @Datum)";
+                    var command = connection.CreateCommand();
+                    command.CommandText = @"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES (@Voornaam, @Achternaam, @Emailadres, @Telefoonnummer, @Afspraakreden, @Datum)";
 
-                command.Parameters.Add(new SqliteParameter("Voornaam", Afspraak.Voornaam ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Achternaam", Afspraak.Achternaam ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Emailadres", Afspraak.Email ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Telefoonnummer", Afspraak.Telefoonnummer));
-                command.Parameters.Add(new SqliteParameter("Afspraakreden", Afspraak.AfspraakReden ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Datum", Afspraak.Datum));
+                    command.Parameters.Add(new SqliteParameter("Voornaam", Afspraak.Voornaam ?? (object)DBNull.Value));
+                    command.Parameters.Add(new SqliteParameter("Achternaam", Afspraak.Achternaam ?? (object)DBNull.Value));
+                    command.Parameters.Add(new SqliteParameter("Emailadres", Afspraak.Email ?? (object)DBNull.Value));
+                    command.Parameters.Add(new SqliteParameter("Telefoonnummer", Afspraak.Telefoonnummer));
+                    command.Parameters.Add(new SqliteParameter("Afspraakreden", Afspraak.AfspraakReden ?? (object)DBNull.Value));
+                    command.Parameters.Add(new SqliteParameter("Datum", Afspraak.Datum));
 
-                await command.ExecuteNonQueryAsync();
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error: ");
             }
 
             var voornaam = Request.Form["voornaam"];
