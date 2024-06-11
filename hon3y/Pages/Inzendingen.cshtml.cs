@@ -70,19 +70,18 @@ namespace hon3y.Pages
                 _logger.LogError(ex, "Error:");
             }
             
-            
-            /*var voornaam = Request.Form["voornaam"];
+            var voornaam = Request.Form["voornaam"];
             var achternaam = Request.Form["achternaam"];
-            var emailadres = Request.Form["emailadres"];
+            var emailadres = Request.Form["email"];
             var uploadedFile = Request.Form["uploadedFile"];
 
             _logger.LogInformation("Test");
 
-            //Console.WriteLine(voornaam, achternaam, emailadres);
+            Console.WriteLine(voornaam, achternaam, emailadres);
 
             _logger.LogInformation(voornaam);
             _logger.LogInformation(achternaam);
-            _logger.LogInformation(emailadres.ToString());*/
+            _logger.LogInformation(emailadres);
 
             return RedirectToPage("Privacy");
         }

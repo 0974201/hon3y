@@ -28,29 +28,6 @@ namespace hon3y.Pages
         {
         }
 
-        //[IgnoreAntiforgeryToken]
-        /*public void OnPost()
-        {
-            var voornaam = Request.Form["voornaam"];
-            var achternaam = Request.Form["achternaam"];
-            var emailadres = Request.Form["emailadres"];
-            var telefoonnummer = Request.Form["telefoonnummer"];
-            var reden = Request.Form["afspraakreden"];
-            var datum = Request.Form["datum"];
-
-            _logger.LogInformation("Test");
-
-            Console.WriteLine(voornaam, achternaam, emailadres, telefoonnummer, reden, datum);
-
-            _logger.LogInformation(voornaam);
-            _logger.LogInformation(achternaam);
-            _logger.LogInformation(emailadres.ToString());
-            _logger.LogInformation(telefoonnummer);
-            _logger.LogInformation(reden);
-            _logger.LogInformation(datum);
-        }*/
-
-
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -74,6 +51,24 @@ namespace hon3y.Pages
 
                 await command.ExecuteNonQueryAsync();
             }
+
+            var voornaam = Request.Form["voornaam"];
+            var achternaam = Request.Form["achternaam"];
+            var emailadres = Request.Form["email"];
+            var telefoonnummer = Request.Form["telefoonnummer"];
+            var reden = Request.Form["afspraakreden"];
+            var datum = Request.Form["datum"];
+
+            _logger.LogInformation("Test");
+
+            Console.WriteLine(emailadres);
+
+            _logger.LogInformation(voornaam);
+            _logger.LogInformation(achternaam);
+            _logger.LogInformation(emailadres);
+            _logger.LogInformation(telefoonnummer);
+            _logger.LogInformation(reden);
+            _logger.LogInformation(datum);
 
             return RedirectToPage("Privacy");
         }
