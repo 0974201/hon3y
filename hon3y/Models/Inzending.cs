@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace hon3y.Models
 {
-    public class Inzendingen
+    public class Inzending
     {
-        public int UploadId { get; set; }
+        public int InzendingId { get; set; }
         
         [Required (ErrorMessage = "bruh")]
         public string Voornaam { get; set; }

@@ -20,12 +20,12 @@ namespace hon3y.Pages
             _connection = connection;
         }
 
+        [BindProperty]
+        public Inzending Inzending { get; set; } = new Inzending();
+       
         public void OnGet()
         {
         }
-
-        [BindProperty]
-        public Models.Inzendingen Inzending { get; set; } = new Models.Inzendingen();
 
         /*public void OnPost()
         {
@@ -36,7 +36,7 @@ namespace hon3y.Pages
         {
             if (!ModelState.IsValid)
             {
-                return Page();
+                return RedirectToPage("Privacy");
             }
 
             byte[] data = null;
@@ -56,7 +56,6 @@ namespace hon3y.Pages
                 var command = connection.CreateCommand();
                 command.CommandText = @"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES (@Voornaam, @Achternaam, @Emailadres, @Bestand)";
 
-
                 command.Parameters.Add(new SqliteParameter("Voornaam", Inzending.Voornaam ?? (object) DBNull.Value));
                 command.Parameters.Add(new SqliteParameter("Achternaam", Inzending.Achternaam ?? (object) DBNull.Value));
                 command.Parameters.Add(new SqliteParameter("Emailadres", Inzending.Email ?? (object) DBNull.Value));
@@ -65,7 +64,7 @@ namespace hon3y.Pages
                 await command.ExecuteNonQueryAsync();
             }
             
-            var voornaam = Request.Form["voornaam"];
+            /*var voornaam = Request.Form["voornaam"];
             var achternaam = Request.Form["achternaam"];
             var emailadres = Request.Form["emailadres"];
             var uploadedFile = Request.Form["uploadedFile"];
@@ -76,7 +75,7 @@ namespace hon3y.Pages
 
             _logger.LogInformation(voornaam);
             _logger.LogInformation(achternaam);
-            _logger.LogInformation(emailadres.ToString());
+            _logger.LogInformation(emailadres.ToString());*/
 
             return RedirectToPage("Privacy");
         }
