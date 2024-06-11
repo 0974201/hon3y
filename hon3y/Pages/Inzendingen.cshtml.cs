@@ -34,7 +34,7 @@ namespace hon3y.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return Page();
             }

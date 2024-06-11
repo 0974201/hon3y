@@ -53,7 +53,7 @@ namespace hon3y.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return RedirectToPage("Privacy");
             }
@@ -63,7 +63,7 @@ namespace hon3y.Pages
                 connection.Open();
 
                 var command = connection.CreateCommand();
-                command.CommandText = "INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES (Voornaam, Achternaam, Emailadres, Telefoonnummer, Afspraakreden, Datum)";
+                command.CommandText = @"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES (@Voornaam, @Achternaam, @Emailadres, @Telefoonnummer, @Afspraakreden, @Datum)";
 
                 command.Parameters.Add(new SqliteParameter("Voornaam", Afspraak.Voornaam ?? (object) DBNull.Value));
                 command.Parameters.Add(new SqliteParameter("Achternaam", Afspraak.Achternaam ?? (object) DBNull.Value));
