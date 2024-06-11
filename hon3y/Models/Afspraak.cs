@@ -19,13 +19,13 @@ namespace hon3y.Models
         
         [Required]
         [DataType(DataType.PhoneNumber)]
-        public int Telefoonnummer { get; set; }
+        public int? Telefoonnummer { get; set; }
         
         [Required]
         public string AfspraakReden { get; set; }
         
         [Required]
         [DataType(DataType.DateTime)]
-        public DateTime Datum { get; set; }
+        public DateTime? Datum { get; set; }
     }
 }
