@@ -68,9 +68,9 @@ namespace hon3y.Pages
                 command.Parameters.Add(new SqliteParameter("Voornaam", Afspraak.Voornaam ?? (object) DBNull.Value));
                 command.Parameters.Add(new SqliteParameter("Achternaam", Afspraak.Achternaam ?? (object) DBNull.Value));
                 command.Parameters.Add(new SqliteParameter("Emailadres", Afspraak.Email ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Telefoonnummer", Afspraak.Telefoonnummer ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Telefoonnummer", Afspraak.Telefoonnummer));
                 command.Parameters.Add(new SqliteParameter("Afspraakreden", Afspraak.AfspraakReden ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Datum", Afspraak.Datum ?? (object) DBNull.Value));
+                command.Parameters.Add(new SqliteParameter("Datum", Afspraak.Datum));
 
                 await command.ExecuteNonQueryAsync();
             }

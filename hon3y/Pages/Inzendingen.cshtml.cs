@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Text.RegularExpressions;
 using Microsoft.Data.Sqlite;
 using System.Data;
 using hon3y.Models;
@@ -49,20 +48,28 @@ namespace hon3y.Pages
                 }
             }
 
-            using (var connection = (SqliteConnection) _connection)
+            try
             {
-                connection.Open();
+                using (var connection = (SqliteConnection) _connection)
+                {
+                    connection.Open();
+                    
+                    var command = connection.CreateCommand();
+                    command.CommandText = @"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES (@Voornaam, @Achternaam, @Emailadres, @Bestand)";
 
-                var command = connection.CreateCommand();
-                command.CommandText = @"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES (@Voornaam, @Achternaam, @Emailadres, @Bestand)";
+                    command.Parameters.Add(new SqliteParameter("Voornaam", Inzending.Voornaam ?? (object) DBNull.Value));
+                    command.Parameters.Add(new SqliteParameter("Achternaam", Inzending.Achternaam ?? (object) DBNull.Value));
+                    command.Parameters.Add(new SqliteParameter("Emailadres", Inzending.Email ?? (object) DBNull.Value));
+                    command.Parameters.Add(new SqliteParameter("Bestand", data ?? (object) DBNull.Value));
 
-                command.Parameters.Add(new SqliteParameter("Voornaam", Inzending.Voornaam ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Achternaam", Inzending.Achternaam ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Emailadres", Inzending.Email ?? (object) DBNull.Value));
-                command.Parameters.Add(new SqliteParameter("Bestand", data ?? (object) DBNull.Value));
-
-                await command.ExecuteNonQueryAsync();
+                    await command.ExecuteNonQueryAsync();
+                }
             }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error:");
+            }
+            
             
             /*var voornaam = Request.Form["voornaam"];
             var achternaam = Request.Form["achternaam"];
