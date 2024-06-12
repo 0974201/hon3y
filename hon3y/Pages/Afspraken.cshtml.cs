@@ -77,7 +77,7 @@ namespace hon3y.Pages
             _logger.LogInformation(reden);
             _logger.LogInformation(datum);
 
-            return RedirectToPage("Privacy");
+            return RedirectToPage("Succes");
         }
     }
 }

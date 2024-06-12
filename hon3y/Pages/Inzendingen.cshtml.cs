@@ -90,7 +90,7 @@ namespace hon3y.Pages
             _logger.LogInformation(emailadres);
             _logger.LogInformation(uploadedFile);
 
-            return RedirectToPage("Privacy");
+            return RedirectToPage("Succes");
         }
     }
 }
