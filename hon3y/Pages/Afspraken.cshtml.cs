@@ -59,6 +59,8 @@ namespace hon3y.Pages
                 _logger.LogError(ex, "Error: ");
             }
 
+            // onderstaande is voor de logfile
+
             var voornaam = Request.Form["voornaam"];
             var achternaam = Request.Form["achternaam"];
             var emailadres = Request.Form["email"];
@@ -67,8 +69,6 @@ namespace hon3y.Pages
             var datum = Request.Form["datum"];
 
             _logger.LogInformation("Test");
-
-            Console.WriteLine(emailadres);
 
             _logger.LogInformation(voornaam);
             _logger.LogInformation(achternaam);

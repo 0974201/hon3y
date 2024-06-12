@@ -39,13 +39,19 @@ namespace hon3y.Pages
             }
 
             byte[] data = null;
+
             if (Request.Form.Files.Count > 0)
             {
-                using (var stream = new MemoryStream())
-                {
-                    await Request.Form.Files[0].CopyToAsync(stream);
-                    data = stream.ToArray();
-                }
+                var file = Request.Form.Files[0];
+                
+                if (file.Length > 0)
+                { 
+                    using (var stream = new MemoryStream())
+                    {
+                        await file.CopyToAsync(stream);
+                        data = stream.ToArray();
+                    }
+                } 
             }
 
             try
@@ -69,6 +75,8 @@ namespace hon3y.Pages
             {
                 _logger.LogError(ex, "Error: ");
             }
+
+            // onderstaande is voor de logfile
             
             var voornaam = Request.Form["voornaam"];
             var achternaam = Request.Form["achternaam"];
@@ -76,8 +84,6 @@ namespace hon3y.Pages
             var uploadedFile = Request.Form["uploadedFile"];
 
             _logger.LogInformation("Test");
-
-            Console.WriteLine(voornaam, achternaam, emailadres);
 
             _logger.LogInformation(voornaam);
             _logger.LogInformation(achternaam);
