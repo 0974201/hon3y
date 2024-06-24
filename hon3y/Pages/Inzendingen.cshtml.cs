@@ -28,6 +28,11 @@ namespace hon3y.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
+            var voornaam = Request.Form["voornaam"];
+            var achternaam = Request.Form["achternaam"];
+            var emailadres = Request.Form["email"];
+            var bestand = Request.Form.Files["uploadedFile"];
+
             if (!ModelState.IsValid)
             {
                 return RedirectToPage("Privacy");
@@ -55,22 +60,22 @@ namespace hon3y.Pages
                 {
                     connection.Open();
 
-                    var voornaam = Request.Form["voornaam"];
-                    var achternaam = Request.Form["achternaam"];
-                    var emailadres = Request.Form["email"];
-                    var bestand = data;
+                    var bestand2 = data != null ? BitConverter.ToString(data).Replace("-", "") : null; ;
 
                     Console.WriteLine(voornaam);
                     Console.WriteLine(achternaam);
                     Console.WriteLine(emailadres);
                     Console.WriteLine(bestand);
+                    Console.WriteLine(bestand2);
 
-                    var statement = $@"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{bestand}')";
+                    var statement = $@"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', X'{bestand2}')";
 
                     Console.WriteLine(statement);
 
                     var command = new SqliteCommand(statement, connection);
                     await command.ExecuteNonQueryAsync();
+
+                    _logger.LogInformation(statement);
                 }
             }
             catch (Exception ex)
