@@ -59,7 +59,7 @@ namespace hon3y.Pages
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error: ");
+                _logger.LogError(ex, "Error: An error occurred");
             }
 
             // onderstaande is voor de logfile
