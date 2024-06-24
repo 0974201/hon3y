@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data;
 using hon3y.Models;
 using Microsoft.Data.Sqlite;
+using Serilog;
 
 namespace hon3y.Pages
 {
@@ -41,15 +42,15 @@ namespace hon3y.Pages
                 {
                     connection.Open();
 
-                    var command = connection.CreateCommand();
-                    command.CommandText = @"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES (@Voornaam, @Achternaam, @Emailadres, @Telefoonnummer, @Afspraakreden, @Datum)";
+                    var voornaam = Request.Form["voornaam"];
+                    var achternaam = Request.Form["achternaam"];
+                    var emailadres = Request.Form["email"];
+                    var telefoonnummer = Request.Form["telefoonnummer"];
+                    var afspraakreden = Request.Form["afspraakreden"];
+                    var datum = Request.Form["datum"];
 
-                    command.Parameters.Add(new SqliteParameter("Voornaam", Afspraak.Voornaam ?? (object)DBNull.Value));
-                    command.Parameters.Add(new SqliteParameter("Achternaam", Afspraak.Achternaam ?? (object)DBNull.Value));
-                    command.Parameters.Add(new SqliteParameter("Emailadres", Afspraak.Email ?? (object)DBNull.Value));
-                    command.Parameters.Add(new SqliteParameter("Telefoonnummer", Afspraak.Telefoonnummer));
-                    command.Parameters.Add(new SqliteParameter("Afspraakreden", Afspraak.AfspraakReden ?? (object)DBNull.Value));
-                    command.Parameters.Add(new SqliteParameter("Datum", Afspraak.Datum));
+                    var command = connection.CreateCommand();
+                    command.CommandText = $@"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{telefoonnummer}', '{afspraakreden}', '{datum}')";
 
                     await command.ExecuteNonQueryAsync();
                 }
@@ -61,21 +62,21 @@ namespace hon3y.Pages
 
             // onderstaande is voor de logfile
 
-            var voornaam = Request.Form["voornaam"];
-            var achternaam = Request.Form["achternaam"];
-            var emailadres = Request.Form["email"];
-            var telefoonnummer = Request.Form["telefoonnummer"];
-            var reden = Request.Form["afspraakreden"];
-            var datum = Request.Form["datum"];
+            var voornaam_log = Request.Form["voornaam"];
+            var achternaam_log = Request.Form["achternaam"];
+            var emailadres_log = Request.Form["email"];
+            var telefoonnummer_log = Request.Form["telefoonnummer"];
+            var reden_log = Request.Form["afspraakreden"];
+            var datum_log = Request.Form["datum"];
 
             _logger.LogInformation("Test");
 
-            _logger.LogInformation(voornaam);
-            _logger.LogInformation(achternaam);
-            _logger.LogInformation(emailadres);
-            _logger.LogInformation(telefoonnummer);
-            _logger.LogInformation(reden);
-            _logger.LogInformation(datum);
+            _logger.LogInformation(voornaam_log);
+            _logger.LogInformation(achternaam_log);
+            _logger.LogInformation(emailadres_log);
+            _logger.LogInformation(telefoonnummer_log);
+            _logger.LogInformation(reden_log);
+            _logger.LogInformation(datum_log);
 
             return RedirectToPage("Succes");
         }

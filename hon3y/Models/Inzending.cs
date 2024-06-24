@@ -6,14 +6,11 @@ namespace hon3y.Models
     public class Inzending
     {
         public int InzendingId { get; set; }
-        
-        [Required (ErrorMessage = "bruh")]
+
         public string Voornaam { get; set; }
-        
-        [Required(ErrorMessage = "bruh")]
+
         public string Achternaam { get; set; }
-        
-        [Required (ErrorMessage = "bruh")]
+
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 

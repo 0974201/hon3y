@@ -26,11 +26,6 @@ namespace hon3y.Pages
         {
         }
 
-        /*public void OnPost()
-        {
-            
-        }*/
-
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -59,15 +54,22 @@ namespace hon3y.Pages
                 using (var connection = (SqliteConnection) _connection)
                 {
                     connection.Open();
-                    
-                    var command = connection.CreateCommand();
-                    command.CommandText = @"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES (@Voornaam, @Achternaam, @Emailadres, @Bestand)";
 
-                    command.Parameters.Add(new SqliteParameter("Voornaam", Inzending.Voornaam ?? (object) DBNull.Value));
-                    command.Parameters.Add(new SqliteParameter("Achternaam", Inzending.Achternaam ?? (object) DBNull.Value));
-                    command.Parameters.Add(new SqliteParameter("Emailadres", Inzending.Email ?? (object) DBNull.Value));
-                    command.Parameters.Add(new SqliteParameter("Bestand", data ?? (object) DBNull.Value));
+                    var voornaam = Request.Form["voornaam"];
+                    var achternaam = Request.Form["achternaam"];
+                    var emailadres = Request.Form["email"];
+                    var bestand = data;
 
+                    Console.WriteLine(voornaam);
+                    Console.WriteLine(achternaam);
+                    Console.WriteLine(emailadres);
+                    Console.WriteLine(bestand);
+
+                    var statement = $@"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{bestand}')";
+
+                    Console.WriteLine(statement);
+
+                    var command = new SqliteCommand(statement, connection);
                     await command.ExecuteNonQueryAsync();
                 }
             }
@@ -78,17 +80,17 @@ namespace hon3y.Pages
 
             // onderstaande is voor de logfile
             
-            var voornaam = Request.Form["voornaam"];
-            var achternaam = Request.Form["achternaam"];
-            var emailadres = Request.Form["email"];
-            var uploadedFile = Request.Form["uploadedFile"];
+            var voornaam_log = Request.Form["voornaam"];
+            var achternaam_log = Request.Form["achternaam"];
+            var emailadres_log = Request.Form["email"];
+            var uploadedFile_log = Request.Form["uploadedFile"];
 
             _logger.LogInformation("Test");
 
-            _logger.LogInformation(voornaam);
-            _logger.LogInformation(achternaam);
-            _logger.LogInformation(emailadres);
-            _logger.LogInformation(uploadedFile);
+            _logger.LogInformation(voornaam_log);
+            _logger.LogInformation(achternaam_log);
+            _logger.LogInformation(emailadres_log);
+            _logger.LogInformation(uploadedFile_log);
 
             return RedirectToPage("Succes");
         }
