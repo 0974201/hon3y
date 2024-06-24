@@ -49,9 +49,9 @@ namespace hon3y.Pages
                     var afspraakreden = Request.Form["afspraakreden"];
                     var datum = Request.Form["datum"];
 
-                    var command = connection.CreateCommand();
-                    command.CommandText = $@"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{telefoonnummer}', '{afspraakreden}', '{datum}')";
+                    var statement = $@"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{telefoonnummer}', '{afspraakreden}', '{datum}')";
 
+                    var command = new SqliteCommand(statement, connection);
                     await command.ExecuteNonQueryAsync();
                 }
             }
