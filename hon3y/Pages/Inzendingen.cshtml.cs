@@ -68,7 +68,7 @@ namespace hon3y.Pages
                     Console.WriteLine(bestand);
                     Console.WriteLine(bestand2);
 
-                    var statement = $@"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', X'{bestand2}')";
+                    var statement = $@"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{bestand}')";
 
                     Console.WriteLine(statement);
 
@@ -80,7 +80,7 @@ namespace hon3y.Pages
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error: ");
+                _logger.LogError(ex, "Error: An error occurred");
             }
 
             // onderstaande is voor de logfile
