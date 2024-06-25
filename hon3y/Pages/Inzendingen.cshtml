@@ -1,0 +1,29 @@
+﻿@page
+@model hon3y.Pages.Inzendingen
+@{
+    ViewData["Title"] = "Formulier2";
+}
+
+<div class="form-group">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <label for="voornaam">Voornaam:</label>
+        <span asp-validation-for="Inzending.Voornaam" class="text-danger"></span>
+        <input name="voornaam" type="text" asp-for="Inzending.Voornaam" placeholder="voornaam" class="form-control" /><br />
+        
+        <label for="achternaam">Achternaam:</label>
+        <span asp-validation-for="Inzending.Achternaam" class="text-danger"></span>
+        <input name="achternaam" type="text" asp-for="Inzending.Achternaam" placeholder="achternaam" class="form-control" /><br />
+        
+        <label for="email">Emailadres</label>
+        <span asp-validation-for="Inzending.Email" class="text-danger"></span>
+        <input name="email" type="email" placeholder="email" asp-for="Inzending.Email" placeholder="email" class="form-control" /><br />
+        
+        <label for="uploadedFile">Bestand:</label>
+        <span asp-validation-for="Inzending.Bestand" class="text-danger"></span>
+        <input name="uploadedFile" type="file" asp-for="Inzending.Bestand" class="form-control" /><br />
+        
+        <button class="btn btn-default">Verzend</button>
+    </form>
+</div>

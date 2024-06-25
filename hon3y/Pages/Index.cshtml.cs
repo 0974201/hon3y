@@ -1,6 +1,5 @@
-using System.Web;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
 
 namespace hon3y.Pages
 {
@@ -15,7 +14,7 @@ namespace hon3y.Pages
 
         public void OnGet()
         {
-            
+
         }
     }
 }

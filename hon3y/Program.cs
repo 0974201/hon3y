@@ -1,77 +1,66 @@
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using System;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using hon3y.Data;
 using Serilog;
-using Serilog.Events;
 
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.File("test.txt", rollingInterval: RollingInterval.Hour)
-    .CreateLogger();
-
-Log.Information("Starting up...");
-
-try
+namespace hon3y
 {
-    Log.Information("Testing");
-
-    var builder = WebApplication.CreateBuilder(args);
-
-    // Add services to the container.
-
-    //log connections
-
-    builder.Services.AddSerilog(); //logging
-    builder.Services.AddRazorPages();
-    builder.Services.AddHttpContextAccessor();
-    builder.Services.Configure<ForwardedHeadersOptions>(options =>
+    public class Program
     {
-        options.ForwardedForHeaderName = "X-Coming-From";
-    });
-
-    var app = builder.Build();
-
-    //okay maar hoe sloop ik alles hier in sldkfjsldk
-
-    // Configure the HTTP request pipeline.
-    if (!app.Environment.IsDevelopment())
-    {
-        app.UseExceptionHandler("/Error");
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        app.UseHsts();
-    }
-
-    //app.Logger();
-    // https://stackoverflow.com/questions/72940591/how-to-display-clientip-in-logs-using-serilog-in-net-core
-
-    app.UseSerilogRequestLogging(options =>
-    {
-        options.MessageTemplate = "/* ------- */ {RemoteIpAddress} {RequestScheme}:{RequestHost} /* ------------ */ \n HTTP Headers: {Headers}";
-
-        //options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
-
-        options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+        public static void Main(string[] args)
         {
-            diagnosticContext.Set("RemoteIpAddress", httpContext.Connection.RemoteIpAddress);
-            diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
-            diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
-            diagnosticContext.Set("Headers", httpContext.Request.Headers);
-        };
-    });
+            //logger aanmaken, schrijft logs naar txt bestanden in de log map, wordt per uur een nieuw txt file aangemaakt
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Hour)
+                .CreateLogger();
 
-    app.UseForwardedHeaders();
-    ///app.UseHttpsRedirection();
-    app.UseStaticFiles();
+            Log.Information("Opstarten...");
 
-    app.UseRouting();
+            try
+            {
 
-    //app.UseAuthorization();
+                Log.Information("Testen of alles naar behoren werkt!");
 
-    app.MapRazorPages();
+                var host = CreateHostBuilder(args).Build();
 
-    app.Run();
-}
-catch (Exception ex)
-{
-    Log.Fatal(ex, "Something went wrong");
-}
-finally
-{
-    Log.CloseAndFlush();
+                using (var scope = host.Services.CreateScope())
+                {
+                    var services = scope.ServiceProvider;
+                    var configuration = services.GetRequiredService<IConfiguration>();
+
+                    //Initialiseer de databases
+
+                    DbInit dbinit = new DbInit(configuration);
+                    dbinit.CreateDatabase(); //maakt database voor de webapplicatie aan
+                    dbinit.CreateTables(); //maakt de tabellen voor de database aan
+                    dbinit.CreateLogsDatabase(); //maakt de database voor de logs aan
+                    dbinit.CreateLogDBTable(); //maakt de tabel voor de log database aan
+                }
+
+                host.Run();
+
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Er ging iets mis!");
+            }
+            finally 
+            {
+                Log.CloseAndFlush(); //reset de logger
+            }
+
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseSerilog();
+                });
+    }
 }

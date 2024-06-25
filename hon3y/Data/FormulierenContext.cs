@@ -11,12 +11,12 @@ namespace hon3y.Data
         }
 
         public DbSet<Login> Login { get; set; }
-        public DbSet<Upload> Uploads { get; set; }
+        public DbSet<Inzending> Uploads { get; set; }
         public DbSet<Afspraak> Afspraken { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            /*modelBuilder.Entity<Upload>(entity =>
+            modelBuilder.Entity<Upload>(entity =>
             {
                 entity.Property(e => e.UploadId)
                 .ValueGeneratedOnAdd()
@@ -33,12 +33,12 @@ namespace hon3y.Data
 
                 entity.Property(e => e.UploadedFile)
                 .HasColumnName("Geuploade bestand");
-            });*/
+            });
 
             modelBuilder.Entity<Login>().ToTable("Login").Property(e => e.LoginId).ValueGeneratedOnAdd();
-            modelBuilder.Entity<Upload>().ToTable("Upload").Property(e => e.UploadId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<Inzending>().ToTable("Upload").Property(e => e.InzendingId).ValueGeneratedOnAdd();
             modelBuilder.Entity<Afspraak>().ToTable("Afspraken").Property(e => e.AfspraakId).ValueGeneratedOnAdd();
-        }
+        }*/
 
     }
 }

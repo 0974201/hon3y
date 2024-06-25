@@ -3,10 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace hon3y.Models
 {
-    public class Upload
+    public class Inzending
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UploadId { get; set; }
+        public int InzendingId { get; set; }
 
         public string Voornaam { get; set; }
 
@@ -16,6 +15,6 @@ namespace hon3y.Models
         public string Email { get; set; }
 
         [DataType(DataType.Upload)]
-        public string UploadedFile { get; set; }
+        public byte[] Bestand { get; set; }
     }
 }

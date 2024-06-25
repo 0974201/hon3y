@@ -1,15 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Data.Sqlite;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Data;
 
 namespace hon3y.Pages
 {
     public class LoginModel : PageModel
     {
-        private readonly ILogger<LoginModel> _logger;   
+        private readonly ILogger<LoginModel> _logger;
 
-        public LoginModel(ILogger<LoginModel> logger)
+        private readonly IDbConnection _connection;
+
+        public LoginModel(ILogger<LoginModel> logger, IDbConnection connection)
         {
             _logger = logger;
+            _connection = connection;
         }
 
         public void OnGet()
@@ -18,14 +25,57 @@ namespace hon3y.Pages
         public IActionResult OnPost()
         {
             var email = Request.Form["email"];
-            var password = Request.Form["password"]; 
+            var password = Request.Form["password"];
 
-            _logger.LogInformation("Test");
+            try
+            {
+                using (var connection = (SqliteConnection)_connection)
+                {
+                    connection.Open();
 
-            _logger.LogInformation(email.ToString());
-            _logger.LogInformation(password);
+                    var statement = $"SELECT * FROM Login WHERE Email = '{email}' AND Password = '{password}'";
 
-            return null;
+                    Console.WriteLine(statement); 
+                    _logger.LogInformation(statement);
+
+                    var command = new SqliteCommand(statement, connection);
+
+                    using (var reader = command.ExecuteReader()) {
+
+                        if (reader.Read())
+                        {
+                            var getEmail = reader.GetOrdinal("Email");
+
+                            if (!reader.IsDBNull(getEmail))
+                            {
+                                var getRow = reader.GetString(getEmail);
+                                _logger.LogInformation($"Login poging geslaagd met email: '{email}' en wachtwoord '{password}'");
+                                Console.WriteLine(getEmail.ToString(), getRow);
+
+                                return RedirectToPage("LoginSucces");
+                            }
+                            else
+                            {
+                                _logger.LogWarning("Kolom 'Email' bevat geen gegevens.");
+                            }
+
+                            _logger.LogInformation(reader.GetOrdinal("Email").ToString());
+                            
+                            Console.WriteLine(reader.GetOrdinal("Email").ToString());
+                        }
+                        else {
+                            _logger.LogInformation($"Login poging mislukt met email: '{email}' en wachtwoord '{password}'");
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, "Error: An error occurred");
+                return Page();
+            }
+
+            return RedirectToPage("Succes");
         }
     }
 }
