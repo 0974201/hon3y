@@ -76,7 +76,7 @@ namespace hon3y.Data
 
                 Console.WriteLine(result);
 
-                if (result > 0)
+                if (result == 0)
                 {
 
                     //voegt gegevens toe aan de login tabel
