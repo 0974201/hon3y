@@ -25,22 +25,25 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="nav">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index" id="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-page="/" id="nav-link">Bewoners</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Afspraken">Maak afspraak</a>
+                            <a class="nav-link" asp-area="" asp-page="/" id="nav-link">Bestuur en Organisatie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Inzendingen">Upload bestand</a>
+                            <a class="nav-link" asp-area="" asp-page="/Afspraken" id="nav-link">Ondernemers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Login">Login</a>
+                            <a class="nav-link" asp-area="" asp-page="/Inzendingen" id="nav-link">Bezoekers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Login" id="nav-link"><img src="/images/loket.svg" /> Mijn Loket</a>
                         </li>
                     </ul>
                 </div>
@@ -55,10 +58,14 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            <a asp-area="" asp-page="/Privacy">Cookies</a>
-            <a asp-area="" asp-page="/Privacy">Toegankelijkheid</a>
-            <a asp-area="" asp-page="/Privacy">Over deze site</a>
-            <div class="float-end"><img src="/images/logo-base-white.svg" /></div>
+            <div id="boven-streep"></div>
+            <div id="streep"></div>
+            <a asp-area="" asp-page="/">Algoritmeregister</a>
+            <a asp-area="" asp-page="/">Cookies</a>
+            <a asp-area="" asp-page="/">Toegankelijkheid</a>
+            <a asp-area="" asp-page="/">Over deze site</a>
+            <a asp-area="" asp-page="/">Werken voor Rotterdam</a>
+            <div class="float-right"><img src="/images/logo-base-white.svg" /></div>
         </div>
     </footer>
 
