@@ -42,28 +42,14 @@ namespace hon3y.Pages
 
                     using (var reader = command.ExecuteReader()) {
 
-                        if (reader.Read())
+                        if (reader.HasRows)
                         {
-                            var getEmail = reader.GetOrdinal("Email");
-
-                            if (!reader.IsDBNull(getEmail))
-                            {
-                                var getRow = reader.GetString(getEmail);
-                                _logger.LogInformation($"Login poging geslaagd met email: '{email}' en wachtwoord '{password}'");
-                                Console.WriteLine(getEmail.ToString(), getRow);
-
-                                return RedirectToPage("LoginSucces");
-                            }
-                            else
-                            {
-                                _logger.LogWarning("Kolom 'Email' bevat geen gegevens.");
-                            }
-
-                            _logger.LogInformation(reader.GetOrdinal("Email").ToString());
-                            
-                            Console.WriteLine(reader.GetOrdinal("Email").ToString());
-                        }
-                        else {
+                            _logger.LogInformation($"Login poging geslaagd met email: '{email}' en wachtwoord '{password}'");
+                            return RedirectToPage("LoginSucces");
+                         }
+                        else
+                        {
+                            _logger.LogWarning("Kolom 'Email' bevat geen gegevens.");
                             _logger.LogInformation($"Login poging mislukt met email: '{email}' en wachtwoord '{password}'");
                         }
                     }
