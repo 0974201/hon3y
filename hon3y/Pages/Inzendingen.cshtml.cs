@@ -35,12 +35,7 @@ namespace hon3y.Pages
             var voornaam = Request.Form["voornaam"];
             var achternaam = Request.Form["achternaam"];
             var emailadres = Request.Form["email"];
-            var bestand = Request.Form.Files["uploadedFile"];
-
-            if (!ModelState.IsValid)
-            {
-                return RedirectToPage("Privacy");
-            }
+            var uploadedFile = Request.Form.Files["uploadedFile"];
 
             byte[] data = null;
 
@@ -64,14 +59,16 @@ namespace hon3y.Pages
                 {
                     connection.Open();
 
-                    var bestand2 = data != null ? BitConverter.ToString(data).Replace("-", "") : null; ;
+                    //convert geuploade bestand naar string  
+                    var bestand = data != null ? BitConverter.ToString(data).Replace("-", "") : null;
 
                     Console.WriteLine(voornaam);
                     Console.WriteLine(achternaam);
                     Console.WriteLine(emailadres);
+                    Console.WriteLine(uploadedFile);
                     Console.WriteLine(bestand);
-                    Console.WriteLine(bestand2);
 
+                    //geen prepared statement gebruiken voor extra veiligheid
                     var statement = $@"INSERT INTO Inzendingen (Voornaam, Achternaam, Email, Bestand) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{bestand}')";
 
                     Console.WriteLine(statement);

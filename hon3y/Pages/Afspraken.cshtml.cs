@@ -34,11 +34,6 @@ namespace hon3y.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return RedirectToPage("Privacy");
-            }
-
             try
             {
                 using (var connection = (SqliteConnection)_connection)
@@ -52,6 +47,7 @@ namespace hon3y.Pages
                     var afspraakreden = Request.Form["afspraakreden"];
                     var datum = Request.Form["datum"];
 
+                    //geen prepared statement gebruiken voor extra veiligheid
                     var statement = $@"INSERT INTO Afspraken (Voornaam, Achternaam, Email, Telefoonnummer, Afspraakreden, Datum) VALUES ('{voornaam}', '{achternaam}', '{emailadres}', '{telefoonnummer}', '{afspraakreden}', '{datum}')";
 
                     var command = new SqliteCommand(statement, connection);
