@@ -13,10 +13,10 @@
         <input name="achternaam" type="text" placeholder="achternaam" asp-for="Afspraak.Achternaam" class="form-control" /><br />
         
         <label for="email">Emailadres</label>
-        <input name="email" type="email" placeholder="email" asp-for="Afspraak.Email" class="form-control" /><br />
+        <input name="email" type="email" placeholder="text" asp-for="Afspraak.Email" class="form-control" /><br />
         
         <label for="telefoonnummer">Telefoonnummer</label>
-        <input name="telefoonnummer" type="number" asp-for="Afspraak.Telefoonnummer" placeholder="06-12345678" class="form-control" /><br />
+        <input name="telefoonnummer" type="text" asp-for="Afspraak.Telefoonnummer" placeholder="06-12345678" class="form-control" /><br />
         
         <label for="afspraakreden">Afspraakreden</label>
         <input name="afspraakreden" type="text" asp-for="Afspraak.AfspraakReden" placeholder="reden afspraak" class="form-control" /><br />
@@ -24,6 +24,6 @@
         <label for="datum">Datum</label>
         <input name="datum" type="datetime-local" asp-for="Afspraak.Datum" placeholder="@DateTime.Now.ToString("dd-MM-yyyy HH:mm")" class="form-control" /><br />
         
-        <button>Verzend</button>
+        <<button class="btn btn-default">Verzend</button>
     </form>
 </div>
