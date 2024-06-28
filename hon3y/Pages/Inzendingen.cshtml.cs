@@ -13,14 +13,14 @@ namespace hon3y.Pages
     public class Inzendingen : PageModel
     {
 
-        private readonly ILogger<Inzendingen> _logger;
+        private readonly ILogger<Inzendingen> _logger; 
 
-        private readonly IDbConnection _connection;
+        private readonly IDbConnection _connection; 
 
         public Inzendingen(ILogger<Inzendingen> logger, IDbConnection connection)
         {
-            _logger = logger;
-            _connection = connection;
+            _logger = logger; //roept de logger voor deze file aan
+            _connection = connection; //connectie met de database
         }
 
         [BindProperty]
@@ -37,6 +37,7 @@ namespace hon3y.Pages
             var emailadres = Request.Form["email"];
             var uploadedFile = Request.Form.Files["uploadedFile"];
 
+            //zet de geuploade data om
             byte[] data = null;
 
             if (Request.Form.Files.Count > 0)
@@ -59,7 +60,7 @@ namespace hon3y.Pages
                 {
                     connection.Open();
 
-                    //convert geuploade bestand naar string  
+                    //converteer geuploade bestand naar string  
                     var bestand = data != null ? BitConverter.ToString(data).Replace("-", "") : null;
 
                     Console.WriteLine(voornaam);

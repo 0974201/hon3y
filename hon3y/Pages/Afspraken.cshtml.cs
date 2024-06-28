@@ -21,8 +21,8 @@ namespace hon3y.Pages
 
         public Afspraken(ILogger<Afspraken> logger, IDbConnection connection)
         {
-            _logger = logger;
-            _connection = connection;
+            _logger = logger; //roept de logger voor deze file aan
+            _connection = connection; //connectie met de database
         }
 
         [BindProperty]

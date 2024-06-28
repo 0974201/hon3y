@@ -6,9 +6,9 @@ namespace hon3y.Data
 {
     public class DbInit
     {
-        private readonly IConfiguration _configuration;
-        private readonly string _connectionString;
-        private readonly string _connectionString2; //electric boogaloo
+        private readonly IConfiguration _configuration; //verwijst naar de configuratie in startup.cs, nodig voor de connectie
+        private readonly string _connectionString; //connectie met de db voor de website
+        private readonly string _connectionString2; //connectie met db voor de logs
 
         public DbInit(IConfiguration configuration)
         {
@@ -21,7 +21,7 @@ namespace hon3y.Data
         {
             using (var connection = new SqliteConnection(_connectionString))
             {
-                connection.Open();
+                connection.Open(); //maakt de database aan als het niet bestaat
             }
         }
 
@@ -69,6 +69,7 @@ namespace hon3y.Data
             {
                 connection.Open();
 
+                //controleert eerst of er entries zijn in de login tabel, als die er niet zijn dan worden er gegevens toegevoegd
                 var checkTableContent = connection.CreateCommand();
                 checkTableContent.CommandText = @"SELECT COUNT(*) FROM Login";
 
@@ -104,6 +105,9 @@ namespace hon3y.Data
             using (var connection = new SqliteConnection(_connectionString))
             {
                 connection.Open();
+
+                //controleert of de tabellen aanwezig zijn, als ze er niet zijn worden ze opnieuw aangemaakt.
+
                 var checkTable = connection.CreateCommand();
                 checkTable.CommandText = @"PRAGMA integrity_check";
                 
@@ -120,7 +124,7 @@ namespace hon3y.Data
         {
             using (var connection = new SqliteConnection(_connectionString2))
             {
-                connection.Open();
+                connection.Open(); //maakt de database aan als het niet bestaat
             }
         }
 

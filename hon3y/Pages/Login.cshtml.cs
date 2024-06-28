@@ -15,8 +15,8 @@ namespace hon3y.Pages
 
         public LoginModel(ILogger<LoginModel> logger, IDbConnection connection)
         {
-            _logger = logger;
-            _connection = connection;
+            _logger = logger; //roept de logger voor deze file aan
+            _connection = connection; //roept de logger voor deze file aan
         }
 
         public void OnGet()
@@ -33,6 +33,7 @@ namespace hon3y.Pages
                 {
                     connection.Open();
 
+                    //statement om gebruiker op te halen
                     var statement = $"SELECT * FROM Login WHERE Email = '{email}' AND Password = '{password}'";
 
                     Console.WriteLine(statement); 
@@ -44,12 +45,13 @@ namespace hon3y.Pages
 
                         if (reader.HasRows)
                         {
+                            //als gebruiker bestaat dan wordt er verwezen naar de login succes pagina en de inlogpoging gelogd
                             _logger.LogInformation($"Login poging geslaagd met email: '{email}' en wachtwoord '{password}'");
                             return RedirectToPage("LoginSucces");
                          }
                         else
                         {
-                            _logger.LogWarning("Kolom 'Email' bevat geen gegevens.");
+                            //mislukte inlogpoging loggen
                             _logger.LogInformation($"Login poging mislukt met email: '{email}' en wachtwoord '{password}'");
                         }
                     }

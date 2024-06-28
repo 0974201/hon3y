@@ -29,17 +29,22 @@ namespace hon3y
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //clientside validation uitzetten zodat het makkelijker wordt om sql injecties uit te voeren
             services.AddRazorPages().AddViewOptions(options => 
             {
                 options.HtmlHelperOptions.ClientValidationEnabled = false;
             });
+
             services.AddHttpContextAccessor();
+
             services.Configure<ForwardedHeadersOptions>(options =>
             {
                 options.ForwardedForHeaderName = "X-Coming-From";
             });
+
             services.AddTransient<DataService>();
 
+            //connectie met de database
             services.AddScoped<IDbConnection>(conn =>
             {
                 var connString = Configuration.GetConnectionString("DefaultConnection");
@@ -61,14 +66,15 @@ namespace hon3y
                 app.UseHsts();
             }
 
+            //configuratie voor de logger
             app.UseSerilogRequestLogging(options =>
             {
                 options.MessageTemplate = "/* ------- */ {RemoteIpAddress} {RequestScheme}:{RequestHost} /* ------------ */ \n HTTP Headers: {Headers}";
 
                 options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
                 {
-                    diagnosticContext.Set("RemoteIpAddress", httpContext.Connection.RemoteIpAddress);
-                    diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+                    diagnosticContext.Set("RemoteIpAddress", httpContext.Connection.RemoteIpAddress); //logt ip adres
+                    diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value); //logt wat er opgevraagd wordt
                     diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
                     diagnosticContext.Set("Headers", httpContext.Request.Headers);
                 };
